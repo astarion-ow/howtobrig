@@ -18,7 +18,7 @@
     --text-font: Roboto Flex;
     /* img */
     --bg-image:url("assets/background-noise.png");
-    --brig-idle:url("https://files.catbox.moe/myxk8h.webp");
+    --brig-idle:url("assets/idle_anim.avif");
     /* misc */
     --img-padding: 21px;
     --line-height: 24px;
@@ -67,6 +67,7 @@ h1{
 h2{
     text-align:center;
     font-size:2rem;
+    padding-top:10px;
 }
 
 h3{
@@ -273,11 +274,32 @@ hr{
 }
 
 /* tables */
+.tbl{
+    column-gap:10px;
+    text-align:center;
+}
+
 .tbl-header{
     text-align:center;
     font-weight:700;
     margin:10px 0;
+    padding:5px 0;
     background:rgb(56, 56, 56);
+}
+
+.tbl-row{
+    display:flex;
+    flex-direction:row;
+}
+
+.tbl-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.tbl video,
+.tbl img{
+    width:100%;
 }
 
 .hero-button{
