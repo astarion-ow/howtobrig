@@ -53,6 +53,7 @@ article{
 h1,h2,h3,h4,h5,h6{
     font-family: var(--header-font);
     color:var(--strong-color);
+    scroll-margin-top:14px;
 }
 
 h2,h3,h4,h5,h6{
@@ -104,6 +105,10 @@ a{
 a:hover{
     color:#74a8d3 !important;
     text-decoration:underline;
+}
+
+.blue{
+    color:var(--highlight-blue) !important;
 }
 
 .red{
@@ -340,6 +345,7 @@ hr{
     border-width:2px;
     border-style:solid;
     border-radius:50%;
+    border-color:var(--text-color);
     padding:2px;
     cursor:pointer;
 }
@@ -368,9 +374,8 @@ hr{
 .map{
     display:block;
     position:relative;
-    width:210px;
+    width:196px;
     height:140px;
-    overflow:hidden;
 }
 
 .map .map-name{
@@ -388,6 +393,7 @@ hr{
     width:100%;
     height:100%;
     object-fit:cover;
+    pointer-events:none;
 }
 
 /* callouts */
@@ -426,4 +432,16 @@ hr{
     padding:0.5rem;
     margin:0.5rem;
     border-radius:5px;
+}
+
+li.checklist,
+ul.checklist li{
+    list-style-type:none;
+}
+
+li.checklist input,
+ul.checklist li input{
+    margin-left:-1.4em;
+    margin-right:0.25rem;
+    vertical-align:middle;
 }
