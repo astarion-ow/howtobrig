@@ -7,7 +7,7 @@
     --bg-color: #1C1C1C;
     --accent-strong:orchid;/*DA70D6*/
     --accent-light:lightslategrey;
-    --highlight-blue: cornflowerblue;
+    --highlight-blue: #15EEEE;
     --highlight-green: forestgreen;
     --highlight-red: crimson;
     --highlight-yellow: gold;
@@ -19,6 +19,9 @@
     /* img */
     --bg-image:url("assets/background-noise.png");
     --brig-idle:url("assets/idle_anim.avif");
+    --light-strong:url("assets/light-good.webp");
+    --light-neutral:url("assets/light-average.webp");
+    --light-weak:url("assets/light-bad.webp");
     /* misc */
     --img-padding: 21px;
     --line-height: 24px;
@@ -144,6 +147,31 @@ figcaption{
 .clear{
     clear:both;
     display:block;
+}
+
+h4.strong::after,
+h4.neutral::after,
+h4.weak::after{
+    content:"";
+    position:relative;
+    display:inline-block;
+    width:21px;
+    height:21px;
+    background-size:cover;
+    background-position: center;
+    vertical-align:middle;
+    margin-left:4px;
+    pointer-events:none;
+}
+
+h4.strong::after{
+    background-image:var(--light-strong);
+}
+h4.neutral::after{
+    background-image:var(--light-neutral);
+}
+h4.weak::after{
+    background-image:var(--light-weak);
 }
 
 hr{
@@ -446,14 +474,29 @@ hr{
     width:100%;
     height:100%;
     max-width:91vw;
-    overflow:hidden;
     border-radius:5px;
     margin:auto;
 }
 
 .callout.callout-example{
+    position:relative;
     background-color:#2B303E;
     border:1px solid var(--highlight-blue);
+    margin-top:2.8rem;
+}
+
+.callout.callout-example::before{
+    content:"Example";
+    position:relative;
+    display:block;
+    top:-1.4rem;
+    left:7px;
+    height:0;
+    color:var(--highlight-blue);
+    font-size:2.1rem;
+    font-style:italic;
+    font-family:var(--header-font);
+    text-transform:uppercase;
 }
 
 .callout-title{
@@ -461,8 +504,11 @@ hr{
 }
 
 .callout-video{
+    display:inline-block;
     max-width:1280px;
     max-height:720px;
+    border-radius:5px;
+    overflow:hidden;
 }
 
 .callout-video video{
@@ -472,9 +518,10 @@ hr{
 }
 
 .callout-content{
-    background:#000000b3;
-    padding:0.5rem;
-    margin:0.5rem;
+    background-color:#0000007d;
+    background-image: var(--bg-image);
+    padding:0.7rem;
+    margin:0.7rem;
     border-radius:5px;
 }
 
