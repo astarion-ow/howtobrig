@@ -186,6 +186,7 @@ hr{
     border-radius:0 70px;
     background-image:url("assets/bg.webp");
     background-position:center;
+    /*pointer-events:none;*/
 }
 
 #brig-idle-anim{
@@ -195,7 +196,8 @@ hr{
     background-image:var(--brig-idle);
     background-size:contain;
     background-repeat:no-repeat;
-    background-position:center;
+    background-position-x:center;
+    background-position-y:bottom;
     overflow:hidden;
     pointer-events:none;
     z-index:2;
@@ -212,6 +214,8 @@ hr{
     background:#000000b3;
     padding:10px 14px;
     border:1px solid #ffffff7d;
+    border-radius:5px;
+    pointer-events:auto;
     z-index:3;
 }
 
@@ -262,6 +266,46 @@ hr{
     max-width:2.8rem;
     max-height:2.8rem;
     object-fit:cover;
+}
+
+.ability-tooltip{
+    position:absolute;
+    max-width:350px;
+    height:auto;
+    padding:10px;
+    color:var(--text-color);
+    background:#000000e8;
+    border:1px solid #ffffff7d;
+    border-radius:5px;
+    pointer-events:none;
+    transform:translate(-100%,-100%);
+    z-index:3;
+}
+
+.tooltip-name{
+    display:block;
+    color:var(--highlight-blue);
+    font-weight:700;
+    font-size:1.2rem;
+}
+
+.tooltip-desc{
+    display:block;
+}
+
+.ability-tooltip hr{
+    margin:7px 0;
+    border-style:dashed;
+}
+
+.tooltip-data-tbl{
+    display:flex;
+    flex-direction:column;
+}
+
+.tooltip-property{
+    color:var(--highlight-blue);
+    font-weight:700;
 }
 
 #brig-sig{
