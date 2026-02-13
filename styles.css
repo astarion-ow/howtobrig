@@ -217,6 +217,7 @@ hr{
     /*pointer-events:none;*/
 }
 
+/* orig brig idle anim
 #brig-idle-anim{
     position:relative;
     width:100%;
@@ -230,6 +231,7 @@ hr{
     pointer-events:none;
     z-index:2;
 }
+*/
 
 #brig-ability-table{
     position:absolute;
@@ -541,4 +543,14 @@ ul.checklist li input{
     margin-left:-1.4em;
     margin-right:0.25rem;
     vertical-align:middle;
+}
+
+/* av1 web component css */
+/* meant to stable render video before javascript loads */
+stacked-alpha-video {
+  display: inline-block;
+}
+
+stacked-alpha-video video {
+  display: none;
 }
