@@ -542,3 +542,13 @@ ul.checklist li input{
     margin-right:0.25rem;
     vertical-align:middle;
 }
+
+#video video{
+    display:none;
+}
+
+canvas{
+    width:100vw;
+    height:100vh;
+    display:block;
+}
