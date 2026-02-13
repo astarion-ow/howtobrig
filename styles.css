@@ -217,7 +217,7 @@ hr{
     /*pointer-events:none;*/
 }
 
-/* orig brig idle anim
+/* orig brig idle anim */
 #brig-idle-anim-test{
     position:relative;
     width:100%;
@@ -231,7 +231,7 @@ hr{
     pointer-events:none;
     z-index:2;
 }
-*/
+
 
 #brig-idle-anim{
     position:relative;
