@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.webp">
     <script  type="text/javascript" src="data.js"></script>
     <script  type="text/javascript" src="generic.js"></script>
+    <script  type="module"  src="https://cdn.jsdelivr.net/npm/stacked-alpha-video/+esm"></script>
   </head>
 
   <body><div id="bg-img"></div><article>
@@ -530,12 +531,17 @@
             <li><p><strong>Stop suiciding onto the point.</strong> This is a pitfall many Support players struggle with. I don't just mean to stop running to the point without your team, although you shouldn't do that either. What I mean here is that, if the enemy team is on the objective and the clock is ticking down the last seconds until you lose a round/point, <i>do not run onto the objective</i>. It is not your job to touch point and a Brig who has wasted her Bash on getting to the objective ASAP is the freest kill the enemy team will ever see. Yes, you will lose some games because your dumb ol' teammates didn't touch point, and yeah that is going to suck. However, you will lose <i>far more games</i> by getting into the habit of running to the objective just because <i>someone</i> has to touch and you don't trust your team to do it. When you touch point and immediately die, your team is left fighting a 4v5 and will likely lose. If you let your Tank touch while you instead keep yourself in a good position off the point then there is a much higher chance that your team will win the fight and flip point. <i>Only <strong>one</strong> person needs to touch point and it should almost never be you.</i></p></li>
         </ul>
     </section>
-    <video id="video" src="assets/video/idle.mp4" autoplay loop muted playsinline></video>
-    <canvas id="glcanvas"></canvas>
+    <stacked-alpha-video>
+        <video autoplay crossorigin muted playsinline loop>
+            <source
+            src="assets/video/idle.mp4"
+            type="video/mp4; codecs=av01.0.08M.08.0.110.01.01.01.1"
+            />
+        </video>
+    </stacked-alpha-video>
   </article>
   <footer>
       <script  type="text/javascript" src="ability-table.js"></script>
-      <script  type="text/javascript" src="webgl.js"></script>
   </footer>
 </body>
 </html>
