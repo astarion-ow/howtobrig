@@ -338,7 +338,6 @@ hr{
     border:1px solid #ffffff7d;
     border-radius:5px;
     pointer-events:none;
-    transform:translate(-100%,-100%);
     z-index:7;
 }
 
@@ -388,7 +387,7 @@ hr{
     background-image:linear-gradient(to top, #DA70D647, #00000000 70%);
     border-radius:0 0 50% 50%;
     z-index:1;
-    opacity:0.56;
+    opacity:0.91;
     pointer-events:none;
 }
 
