@@ -387,7 +387,7 @@ hr{
     background-image:linear-gradient(to top, #DA70D647, #00000000 70%);
     border-radius:0 0 50% 50%;
     z-index:1;
-    opacity:0.91;
+    opacity:0.7;
     pointer-events:none;
 }
 
@@ -571,7 +571,6 @@ li.checklist input,
 ul.checklist li input{
     margin-left:-1.4em;
     margin-right:0.25rem;
-    vertical-align:middle;
 }
 
 /* av1 web component css */
