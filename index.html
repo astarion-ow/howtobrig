@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.webp">
     <script  type="text/javascript" src="data.js"></script>
     <script  type="text/javascript" src="generic.js"></script>
+    <script  type="text/javascript" src="toc.js" defer></script>
     <script  type="module"  src="https://cdn.jsdelivr.net/npm/stacked-alpha-video/+esm"></script> <!-- web component for transparent av1 -->
   </head>
 
@@ -21,57 +22,57 @@
     <div id="table-of-contents">
         <img src="assets/mace w circle.webp" alt="Table of Contents" width="175px" height="60px" style="margin:auto">
         <p>
-            <span class="toc-header">1. The Fundamentals</span>
+            <span class="toc-header"><a href="#the-fundamentals">1. The Fundamentals</a></span>
             <br>
             <span class="toc-desc">Controlling Space, Not Feeding, Using Rally, & Protecting Your Other Support</span>
         </p>
         <p>
-            <span class="toc-header">2. Advanced Tech</span>
+            <span class="toc-header"><a href="#advanced-tech">2. Advanced Tech</a></span>
             <br>
             <span class="toc-desc">Mind Games, Counterbashing, & Shield Bash Jumps</span>
         </p>
         <p>
-            <span class="toc-header">3. Counterplay</span>
+            <span class="toc-header"><a href="#counterplay">3. Counterplay</a></span>
             <br>
             <span class="toc-desc"> How to Counter Every Hero in the Game</span>
         </p>
         <p>
-            <span class="toc-header">4. Advice for Lower Ranked Players</span>
+            <span class="toc-header"><a href="#general-advance">4. General Advice for Lower Ranked Players</a></span>
             <br>
             <span class="toc-desc">Tips Specifically for Those Trying to Climb Out of the Metal Ranks</span>
         </p>
     </div>
-    <section id="the-fundamentals"><!-- The Fundamentals -->
-        <h2>The Fundamentals</h2>
+    <section><!-- The Fundamentals -->
+        <h2 id="the-fundamentals">The Fundamentals</h2>
         <p>Brig is a hero centered around balance. There are times when Brig's best play is to engage on enemies close-range, swinging and bashing as aggressively as possible. There are times when Brig's best play is to stay far away from the enemy team and poke them with her Whipshot when possible. Neither course of action should be your sole playstyle for the duration of any given game, rather you should observe the state of the game and determine which is the greater benefit for your team in the given moment. A Brig who only plays close-range, swinging on any enemy they can find, will inevitably put themselves in a bad position, feed, and die. A Brig who only plays with long-range Whipshots might as well play another Support.</p>
         <p><strong>Brig's greatest asset as a Support is her ability to control and defend space on the map.</strong> Yes, the AOE healing from Inspire is great. Yes, the burst healing from her Repair Packs is great. Yes, Rally is a versatile and powerful Ultimate. None of these individual abilities are what make Brig so strong in virtually any team, they are all in service to her ability to <strong>control and defend space.</strong> So, what does this mean?</p>
         
-        <h3>Controlling Space</h3>
-        <h4>Setting Up</h4>
+        <h3 id="controlling-space">Controlling Space</h3>
+        <h4 id="setting-up">Setting Up</h4>
         <figure class="float-right"><img src="https://files.catbox.moe/3m186l.webp" alt="Dorado Example" width="480px" height="270px"><figcaption>Dorado 1st Point</figcaption></figure><p>Once you are in a strong position, you want to remain in/around that position for as long as you can without dying or until the game state has changed such that your position is no longer as strong as it was. As an example, on an Escort map such as Dorado, playing on the high ground highlighted in green is where you will often want to start when playing Defense. However, even if the enemy team is playing dive and you are repeatedly successful in keeping them off of this space, the nature of Escort means that the payload's progress will alter the game state even if it is far away from reaching the next checkpoint. On Dorado, the payload will eventually reach the choke of the archway, at which point you will often want to give up your position outlined in green to move closer to the area highlighted in blue. Through no fault of your own, the green space is now inherently less advantageous to control than the blue space and you must adapt accordingly. Furthermore, just because the green space has grown weaker, that does not mean that it won't return to being the stronger position later on in the match. If you move to the blue position and your team subsequently wins the fight and holds the choke, then you will likely want to set up for the next fight by returning to the green position. This concept of moving between areas of the map based on their immediate advantages and disadvantages is called rotation and is a key part of playing <i>Overwatch</i> as a whole. As Brig, you will want to identify areas that give you strong line-of-sight to where you anticipate the next fight will occur, and/or areas that would be advantageous for the enemy team to control, and rotate to and from those areas accordingly.</p>
 
-        <h4>Dropping From High Ground</h4>
+        <h4 id="dropping-from-high-ground">Dropping From High Ground</h4>
         <p>Outside of certain techs that let her abuse map geometry with Shield Bash, Brig has no vertical mobility whatsoever. When electing to drop from high ground to swing on the enemy team, keep in mind how difficult it will be for you to return to that high ground. Some high grounds, such as the tall buildings on the second point of Hollywood, are easy for Brig to access due to the elevators. Other high grounds, like the buildings overlooking the first point of King's Row, will take significantly longer for Brig to get to and may also put Brig in view of the enemy team, allowing them to kill you while rotating. If you are not confident that you can return to the high ground before the start of the next team fight, then reconsider dropping down.</p>
 
-        <h3>Positioning</h3>
-        <h4>Downtime</h4>
+        <h3 id="positioning">Positioning</h3>
+        <h4 id="downtime">Downtime</h4>
         <p>Don't be afraid of downtime. There will be moments during your matches when you are functionally doing nothing other than standing around. An impatient Brig player who uses this time to get more involved in a fight will die more often and die early, potentially losing your team a round or even the game. Sometimes, standing menacingly is the most valuable thing a Brig can do.</p>
         <p>In the below example on Watchpoint: Gibraltar, you can see that I am essentially standing still in spawn for a solid 20 seconds at the start of the game . Since my team is taking opening spam damage, my job is just to sit back and toss packs until my Tank and DPS manage to get through to set up their own engagements.</p>
 
-        <h4>Understanding the Game State</h4>
+        <h4 id="understanding-the-game-state">Understanding the Game State</h4>
         <p>For an example on how the game state informs your position, let's look at this example on Rialto. The reason I'm in the position I am in at the start of the clip is because I successfully tricked the enemy team into believing I had swapped spawn rooms after our team lost first point. I move to reconvene with my team and, even though I know where the enemy Mauga is and what he is doing, I don't back up into my team, nor do I so much as glance at my team to heal them or try to help them deal with the Mauga in any way. This is because the value of what the Mauga is doing comes in helping his team get point progress. This is a form of taking space inherent to the role of the Tank. At one point in this clip, all four of my teammates are looking at Mauga, which means none of them are looking at the payload. As soon as I realize that the enemy Ana is sitting alone on point, I decide that my best play is to contest the Ana and defend the space that she is looking to take. It doesn't even matter that I whiff every Whipshot in the clip; the simple act of my being there is enough to completely deny both the Mauga and the Ana from getting any value.</p>
 
         <h4>Don't Be Late to the Fight</h4>
         <p>A mistake I frequently see when watching Brig gameplay is being positioned just too far away from the fight.</p>
 
-        <h4>Get Off the Corner</h4>
+        <h4 id="get-off-the-corner">Get Off the Corner</h4>
         <p>This is a concept taken from Capitology, a former coach for professional <i>Overwatch</i>. You can hear him discuss this topic himself in <a href="https://www.youtube.com/watch?v=z9n-JNB52rk">this YouTube video</a>, but here I'll be summarizing this concept and expounding on it through the lens of Brig. When staging yourself in advance of the next team fight, you want to be positioned such that the enemy team, the Tank in particular, cannot reach you without needing to expend such significant resources that killing you equates to suicide.</p>
         <p>This is primarily something that needs to be learned by Brig players in Diamond rank who are having trouble making it to and staying in Masters. Brigs in the lower metal ranks tend to play very close to the fight at all times, and in the climb to Platinum and Diamond they learn to keep their distance and play their life. The gap in climbing past these ranks comes in unlearning that distant playstyle, at least to a certain extent. The ebb and flow of the game state is what allows Brig to move between your team's frontline and backline or even onto cheeky off-angles while managing to get value at every stage.</p>
 
-        <h4>Not Feeding</h4>
+        <h4 id="not-feeding">Not Feeding</h4>
         <p>The advice any Support player will most often hear is to "play their life." Due to how powerful the Support role is, losing a Support early on can snowball into a lost team fight so not dying becomes central to the role's ethos. HOWEVER, the biggest mistake a Brig player can make with this advice is to play too passively. A Brig who focuses on "playing her life" will not seize opportunities to make game-winning plays for fear of dying. This is why I would not recommend prioritizing "playing your life" to aspiring Brig players. This does not mean that you should be cavalier about your deaths and start shield bashing directly into a full HP Reinhardt. This means not taking fights you KNOW you cannot win. When the enemy team sends their tank and two DPS after you, do not stay and fight as we both know you will lose and die. When there is a Ashe in your range who already used her Coach Gun, then go to her and kill her.</p>
 
-        <h4>Not Tilting</h4>
+        <h4 id="not-tilting">Not Tilting</h4>
         <p>Everyone in <i>Overwatch</i> gets tilted at some point. Maybe the enemy Hanzo just keeps hitting bullshit headshots, maybe your team is filing into the enemy's bullets conga line style and never regrouping, maybe there's another Pharmercy that your DPS cant seem to shoot. While it is normal to get tilted by these frustrating situations, the worst thing you can do as Brig is to get tilted into focusing a single enemy or believing you must solo carry the team to victory. If you get tilted by an enemy Hanzo, do not get tunnel vision and start running at the Hanzo in a blind rage as soon as you see him because no one on your team seems to be able to kill him. You will play worse, you will put yourself in a bad position, you will die, you will lose, and you will get even more tilted. By playing intelligently, you can turn around losing games. By letting the frustration dictate your playstyle, you will go on loss streaks.</p>
         <p>I have a personal rule to log off for the day if I lose three games in a row, but you can come up with your own means of dealing with the urge to tilt-queue. Also, we all know that <i>Overwatch</i> comms can be toxic and that can be detrimental to the learning experience. Disabling these altogether can be good if you are the type of person who is easily upset.</p>
         <ul>
@@ -79,7 +80,7 @@
             <li>For text chat, you can quickly hide the text chat UI by pressing <strong>Ctrl+Shift+C</strong>, or you can disable joining text chat altogether in <strong>Options→Social→Team Text Chat: Off.</strong></li>
         </ul>
 
-        <h3>Using Your Kit</h3>
+        <h3 id="using-your-kit">Using Your Kit</h3>
         <div id="brig-hero-card">
             <!--<div id="brig-idle-anim-test"></div>-->
             <div id="brig-idle-anim"><stacked-alpha-video><video autoplay crossorigin muted playsinline loop><source src="assets/video/idle_av1.mp4" type="video/mp4; codecs=av01.0.08M.08.0.110.01.01.01.1"/><source src="assets/video/idle_hevc.mp4" type="video/mp4; codecs=hvc1.1.6.H120.b0" /></video></stacked-alpha-video></div>
@@ -109,17 +110,19 @@
         <figure class="float-right"><img src="https://files.catbox.moe/ao87hw.webp" alt="Brig Ability Configuration" width="364px" height="304px"></figure>
         <p>Of note, Brig does not have a melee attack like most other heroes, instead her primary fire and her melee are functionally the same button, with both causing her to swing her flail when pressed. Crucially, however, while these inputs both do the same thing, they are still separate inputs. What I'm getting at here is a basic quality of life change I'd recommend you make. Brig's Shield Bash is triggered by pressing primary fire when her shield is up, meaning you are pressing M1 (left mouseclick) while holding M2 (right mouseclick). When you are in the heat of the battle, you will be pressing these two buttons constantly, and I am certain you have, at least a few times, made the mistake of Bashing when you didn't intend to because of this. If you have a mouse with additional buttons near your thumb then I would recommend remapping your controls on Brig so that melee is bound to M1 and primary fire is bound to M4 (M4/M5 are the two keys by the thumb on my mouse, though your mouse may differ slightly). Shield Bash only triggers when using primary fire, not when using melee, so you will never accidentally Bash again since your Bash is now tied to M4 and you can swing your flail as normal using M1 without worry.</p>
 
-        <h4>Using Whipshot</h4>
+        <h4 id="using-whipshot">Using Whipshot</h4>
         <p>Whipshot is the simplest part of Brig's kit. It's also one of the strongest tools in the game and among the most satisfying abilities to land. Much as the "boop" is often relegated to mere humor, there's a reason that only a small handful of characters have any kind of real "boop" ability. Being able to completely halt momentum and displace heroes is extremely valuable, even when you aren't knocking people off the map, and this is doubly true when you can boop people from 20 entire meters away.</p>
         <p>As I said, the ability is simple. You click the button and the head of Brig's flail will launch forward and hit whatever you are aiming at. That's it. In addition, Whipshot has a very short cooldown of 4 seconds, meaning you can spam this ability pretty freely.</p>
         <p>The only nuance to understand about Whipshot is that it is a projectile weapon, not a hitscan one. In the words of Soldier: 76, "aim where they're going, not where they are." Also, don't be afraid to just hit the biggest guy you see ad infinitum. Whipping the Tank is far easier than whipping a DPS or Support, and knocking the Tank away is one of Brig's primary purposes.</p>
         <p>There is one significant drawback to Whipshot which you don't anticipate screwing you over until it actually does so. Missing your Whipshot can and will punish you. The farther away your target is, the riskier it is to try and Whipshot them. This is especially true for trying to Whipshot flying characters. Unlike the rest of Brig's abilities, your Whipshot cannot be animation-cancelled via another input. When you click Whipshot, you are locked into an animation until the head of the flail comes back to you, which only happens once the Whipshot has either hit an enemy or an environmental surface. If it hits neither (like in the case of missing a Whipshot on a flyer), then you will be motionless for almost an entire half-second waiting for the Whipshot to reach max range and return, which can be a very long time in the heat of battle. In addition, you are slowed to 50% movement speed when your Whipshot is active, so that's a half-second where you are slow and unable to fight back. Be smart about going to risky Whipshots; if you are eating damage from one angle then it is probably not a good idea to chance a Whipshot on a 20HP Echo in a separate direction unless you are confident that you can land the hit.</p>
+        
+        <h5>Pre-Aiming Escape Routes</h5>
 
-        <h4>Shield Management</h4>
-        <h5>Using the Third-Person Camera</h5>
+        <h4 id="shield-management">Shield Management</h4>
+        <h5 id="using-the-third-person-camera">Using the Third-Person Camera</h5>
         <p>Brig is part of a very limited roster of characters who can freely switch to a third-person perspective mid-game. The third-person camera is incredibly important to Brig's kit, as it allows you to scout around corners and see threats you otherwise would not be able to see. </p>
 
-        <h5>Shield Dancing</h5>
+        <h5 id="shield-dancing">Shield Dancing</h5>
         <p>In the context of Brig, "shield dancing" refers to repeatedly dropping and redeploying your shield while taking damage either mid-fight or just while rotating. Remember, the shield is flimsy. You can maximize the value you get out of your shield by spreading the damage between both the shield and Brig herself. There is a certain tempo you'll have to learn when doing this mid-fight; Brig's normal flail attack can be animation-cancelled by deploying your shield, so if you alternating swing→shield→swing→shield then you may accidentally cancel one of your swings before it has time to actually connect with the enemy.</p>
 
         <h5>Shielding Teammates</h5>
@@ -133,17 +136,17 @@
             <div class="callout-content"><p>One more niche example, in this fight my Genji popped his Blade and the enemy Cassidy countered with Deadeye to zone him out of using it. You can see that Genji actually used my shield to safely peek from cover to see if there were any safe angles to take here, and we both just backed up upon realizing there weren't any.</p></div>
         </div>
 
-        <h4>Shield Bashing</h4>
+        <h4 id="shield-bashing">Shield Bashing</h4>
         <p>Whenever you are in a close-range fight with another hero, try to get into the habit of backing up slightly as soon as you Bash into the enemy. This is called "spacing" and is meant to take advantage of the fact that Brig's flail swing has a longer range than the standard Quick Melee of any other hero (Flail has a range of 6 meters while Quick Melee has a range of 2.5 meters). Bashing into an enemy obviously puts you as close to them as possible, but if you back up ever so slightly after the Bash then you will be out of melee range while they are still in flail range. This is especially valuable against heroes like Sigma who rely on the Quick Melee as part of their normal damage combos.</p>
         <p>As of Season 1 of 2026, Brigitte is part of the "Survivor" sub-role, which grants the passive to immediately activate health regeneration when using a movement ability.</p>
 
-        <h4>How Inspire Works</h4>
+        <h4 id="how-inspire-works">How Inspire Works</h4>
         <p>I've saved discussing Inspire for the end of this kit breakdown (excepting the Rally section below) because this ability is needlessly overcomplicated by the Overwatch community, especially casual players. The beauty of Inspire is that you don't need to think about it virtually ever. Every single thing you do that inflicts any damage whatsoever (i.e. swinging the flail, landing a Whipshot, and hitting enemies with Bash) will proc inspire. If you are playing with the rest of Brig's kit to any degree of proficiency then the Inspire healing will come naturally. In fact, prioritizing Inspire is one of the most common ways for amateur Brig players to get themselves killed; they get antsy about not having Inspire up for a while and then they go into a bad position trying to hit a Whipshot and then they die. For the sake of knowledge and completeness, I will explain exactly how Inspire works below, but I truly encourage you to stop caring about this passive ability; it is powerful, yes, but it is only powerful when you are doing everything else right. It is called a passive for a reason. Treat it as such.</p>
         <p>Many people liken Inspire to Lúcio's own passive healing since they are both AOEs, however using Lúcio as a starting point is the crux of players' misunderstanding of how Inspire works because the AOE is the only commonality between the two passives and they are otherwise radically different.</p>
         <p>When Brig has her Inspire active, she does not passively generate a circle of healing. In fact, it's somewhat erroneous to say she has Inspire "active" at any point. Inspire is not something Brig does, it is something that she gives to other heroes. Any time you proc Inspire with any ability, a very faint yellow burst will emit from Brig one single time. If you pay attention you can see this burst but usually it's something your eyes glaze over. This burst instantly travels 20 meters in all directions, and anyone who was in line of sight when the burst was first activated will receive the Inspire buff. The Inspire buff lingers for 4 seconds and heals 15HP a second, totalling to 60HP of healing. Any ally who received the Inspire buff can leave Brig's line of sight at any point during those 4 seconds and will still receive the full 60 healing because Inspire's healing does not come from Brig, it comes from the buff. Conversely, any ally who was not in Brig's line of sight when she first proc'd the burst will not receive any healing, even if they enter Brig's line of sight immediately afterwards, because they did not receive the buff.</p>
         <p>If you think you understand this concept now, I've prepared a small quiz below.</p>
 
-        <h4>Using Rally</h4>
+        <h4 id="using-rally">Using Rally</h4>
         <p>Rally is a powerful and versatile Ultimate that:</p>
         <ul>
             <li>Provides Brig with armor</li>
@@ -206,7 +209,7 @@
         <p><strong style="color:var(--highlight-red)">Ultimates you can theoretically cancel but realistically will rarely be in the right circumstance to</strong> include any Channelled or Casted Ultimate that Brig is not likely to be within Bash range of (e.g. Pharah's Barrage, a Channelled Ultimate that is usually activated in the sky, or Junkrat's Rip-Tire, a Casted Ultimate which is usually cast behind cover).</p>
         <p>Note that this only applies to interrupting the enemy's Ultimate, not blocking the enemy Ultimate. It is difficult to stun Reinhardt out of his Shatter entirely due to its narrow cast time, however it is very easy to block his Shatter from hitting you or allies behind you due to the effect's reactably slow movement speed. As this does not require Rally to do, these kinds of Ultimate interactions are addressed in the hero-specific Counterplay section below.</p>
 
-        <h4>A Brief Note on Perks</h4>
+        <h4 id="a-brief-note-on-perks">A Brief Note on Perks</h4>
         <p>At the time of writing, Brig's Perks are all quite good. You can't really go wrong picking any of them, though there are definitely arguments to be made for the case of an "optimal build." You should choose your Minor Perk based on the environment of the game you're in; if you are against a more brawl-heavy team and aren't able to get too close to the action then her Right Minor Perk (Morale Boost) can compensate for your limited engagements by extending your Inspire uptime. Conversely, if you are playing against a dive-heavy team and are spending a lot of time fending off flankers then her Left Minor Perk (Combat Medic) lets you chuck Repair Packs with ridiculous frequency.</p>
         <p>Her Major Perk is less of a discussion because the majority of Brig players will tell you that her Left Major Perk (Inspiring Strike) is by far the better option. It adds even more utility to Shield Bash, giving you additional movement speed equivalent to Junker Queen's Shout while also making you better in brawls and 1v1 duels by changing the Inspire triggered from Bashing from healing-over-time into burst healing. This means that hitting an enemy with Shield Bash now <i>instantly</i> heals you and any allies in range for 60HP a piece, which is on par with Baptiste's Regenerative Burst. Not only that, this burst healing <i>stacks</i> with your existing Inspire rather than resetting it. If you are in the middle of a brawl, weaving in Bashes and flail swings, then you will constantly be healing for 15HP a second with a 60HP burst heal on a 5 second cooldown. Your healing numbers will skyrocket and flankers will have an extremely hard time killing you or any teammates near you.</p>
         <p>However, you will have to pry Whiplash from my cold dead hands.</p>
@@ -216,10 +219,10 @@
         <p>But the key takeaway here isn't just how important breakpoints are to game balance. Something I observed during Season 7 was that players on Sojourn and similar heroes who previously had a favorable matchup against Brig in the 1v1 were <i>staying in those 1v1s for longer than they should have</i>. Players love to mix-max their value, to stay in for as long as they can and do as much as they can before escaping with just enough time and health to live. Identifying just how long you can safely fight before having to disengage is muscle memory for anyone who plays the game beyond the purely casual level. <i>Changing breakpoints ruins that muscle memory</i>. To bring us back to Perks, it actually works in the favor of off-meta gremlins like myself that Inspiring Strike is widely considered the more intrinsically valuable Perk because players at the higher ranks expect me to take it. Much like in Season 7, the enemy Sojourn is far more likely to stay in place for too long when they don't expect a surprise 50 damage that changes Brig's kill combo from two swings <span class="blue">(90)</span> + Bash <span class="blue">(70)</span> + Whipshot <span class="blue">(70)</span> to <strong>one</strong> swing <span class="red">(45)</span> + Bash <span class="red">(70)</span> + Whipshot <span class="red">(70)</span> + Whiplash <span class="red">(50)</span>. The value of disrupting the enemy's muscle memory isn't as obvious as the value provided by Inspiring Strike, however in practice Whiplash has helped me to plenty wins and there are very few games where I don't take it.</p>
         <p>This is an uncommon stance, so feel free to take Inspiring Strike if it better suits your playstyle.</p>
 
-        <h3>Playing With Your Tank</h3>
+        <h3 id="playing-with-your-tank">Playing With Your Tank</h3>
         <p>This is an aspect of <i>Overwatch</i> that is overlooked at all ranks but especially at the lower ranks. Your tank sets the tempo of your team's engagements. If you are playing with an extremely aggressive Tank, like a Reinhardt or Doom that just keeps going in, play at their tempo. Play aggressively with them, not necessarily frontlining but definitely not standing on the objective and wondering why your Tank is feeding. And speaking of the objective...</p>
 
-        <h3>Standing on the Objective</h3>
+        <h3 id="standing-on-the-objective">Standing on the Objective</h3>
         <p><i>Overwatch</i> is an objective-based game, so players often assume this means that they should be standing on the objective as often as possible. The issue is, everyone assumes this which means players from Bronze to Diamond will stack the whole team on the objective and allow the enemy team to freely take map space. In the case of payload-based map types like Hybrid or Escort, only one person needs to be on the objective to progress your team to a win. In the KotH Control and Flashpoint maps, no one needs to be standing on the objective once your team has control of it. In higher ranks and professional play, this is referred to as the "defender's advantage"; the team in control of the point does not need to be on it, however the team trying to take the point from them does need to be on it, especially as the clock ticks down. This restricts the attacking team's ability to move and allows the defending team to more freely exercise map control.</p>
         <p>You'll notice the commonality here is map control. This is why the first section of this guide is about Brig's ability to control space and why I believe Brig is viable just about everywhere. <i>Overwatch</i> is an objective-based game, yes, but winning in <i>Overwatch</i> is based on map control, even if you do not consciously recognize this. The more of the map your team can hold and deny from the enemy team, the higher your team's chances of winning are.</p>
         <p>Does this mean you should never stand on the objective? No. As stated, only one person needs to push the objective and sometimes that person is you. On maps with less easily-accessible high ground such as King's Row, I will often be the one emoting on the payload while the rest of my team pushes forward to take space. Conversely, on maps with valuable high ground such as Watchpoint: Gibraltar, I will almost never touch the payload for the entire game. Simply put, it is not my job. At higher ranks people are aware of this, however if you are playing in the metal ranks then your team will likely be a little annoyed that you aren't touching the payload. If they get mad at you, ignore them. I never intentionally try to piss off my team, but it is better to win while your team is a little mad at you than to lose because you acquiesced to their demands that you sit on point. To make things easy for you, these are the maps where I usually elect to be the one pushing the payload:</p>
@@ -248,11 +251,11 @@
         <p>I will note an exception to this rule, which is when you are in overtime. If you are in comms with your team then you can safely play off the payload if your teammates call out who is on or planning on staying on for the push. It is still better for your team for you to not be on payload, however, if you are solo queueing in silence then I frankly would not risk getting off in overtime. It's far too easy for everyone to assume someone else will push and then you c9 for no reason. Brig is actually a fairly strong payload pusher in overtime anyway; the payload itself heals players around it for 5HP a second, which isn't a lot on its own but during overtime you can consider this to be a small buff to your Inspire. The payload also provides a small amount of cover from incoming fire, so weaving in your shield usage with ducking behind the payload lets you stay alive with an intact shield for quite a while.</p>
         <p>One last important note, whenever you are on the payload for any reason, do not actually stand on the payload, stand next to it. You are easier to hit when you are just standing on top of it, you cannot use the payload for cover when you are on top of it, and any Ultimate that affects the floor of the map, like Reinhardt's Shatter or Venture's Tectonic Shock, will go under the payload and ignore your shield when you are on top of it.</p>
 
-        <h3>Protecting Your Other Support</h3>
+        <h3 id="protecting-your-other-support">Protecting Your Other Support</h3>
         <p>An oft-cited part of Brig's hero fantasy is the role of bodyguard. The archetypal anti-dive Support line consisting of Brig & Ana is the most obvious example of this. When faced with a Wrecking Ball, Winston, Tracer, or Genji looking for backline picks, Brig's job is to stay close enough to Ana that the two can work together to repel or even kill these divers. As strong as Brig is in this specific scenario, when you are solo queueing on ladder you will often be alongside players who can't or don't want to play Ana, and you will often play alongside Supports that synergize poorly with Brig. This is completely fine, flaming your other Support for playing whatever hero they decide on will not help you win games (and as an OTP I have no room to complain anyway). Instead, approach these games with a more proactive mindset to identify where you can cover your team's weak spots and where you can embolden your team's strengths. It is entirely possible to win games at any rank even with a Brig/Mercy backline.</p>
         <div class="tbl abbr nav">
             <div class="tbl-header">Click a Hero to jump to their section</div>
-            <div class="tbl-row" style="column-gap:7px">
+            <div class="tbl-row hero-button-container">
                 <a href="#playing-with-ana"><span class="hero-button strong"><img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/3429c394716364bbef802180e9763d04812757c205e1b4568bc321772096ed86.png" alt="Ana"></span></a>
                 <a href="#playing-with-baptiste"><span class="hero-button neutral"><img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/f979896f74ba22db2a92a85ae1260124ab0a26665957a624365e0f96e5ac5b5c.png" alt="Baptiste"></span></a>
                 <a href="#playing-with-illari"><span class="hero-button neutral"><img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ea986038f9d307bd4613d5e6f2c4c8e7f15f30ceeeabbdd7a06637a38f17e1f.png" alt="Illari"></span></a>
@@ -312,8 +315,8 @@
     </section>
     <hr>
     <section><!-- Advanced Tech -->
-        <h2>Advanced Tech</h2>
-        <h3>Mind Games</h3>
+        <h2 id="advanced-tech">Advanced Tech</h2>
+        <h3 id="mind-games">Mind Games</h3>
         <p>Knowing how to win mind games with your opponent is a useful skill at all levels of play, and the higher you rise in rank the more valuable this concept becomes. In essence, mind games are when you utilize the threat of your movement or kit to goad an enemy into making a punishable mistake. There are many hero-specific mind games that are addressed in the Counterplay section below, however the basics of a mind game can be applied universally.</p>
         <p>For an example on how to mind game your opponent, let's look at the following play on Hollywood from two different perspectives.</p>
         <div class="tbl" style="display:flex;flex-direction:row;">
@@ -328,7 +331,7 @@
         </div>
         <p>After failing to save my Genji, I whip Winston to both proc Inspire and draw attention. Knowing that the Winston will try to jump on an isolated Brig, I immediately bash into the stairway to safety. I know that the Winston knows where I am going and, rather than going across point to the safer location with a mini health pack, I intentionally take a longer route around obstacles behind the point. The foremost reason for this is because it is always better to play around cover, however these particular obstacles provide the secondary effect of obscuring my full character model. When I circle behind the wooden boxes, my character model is completely hidden from Winston's view and he naturally assumes I will continue walking in the same direction towards the safety of the elevator. I wait by the wooden boxes until I hear him jump and then immediately bash back into the stairway I just came from, keeping me safe while leaving the Winston without his Jump in a position that is so bad that he feels forced to use his Bubble in order to keep himself alive. Once my Bash is off of cooldown I again immediately use it, this time to both proc Inspire and to rotate across the point. As a result of setting up and winning this mind game, I am able to keep myself alive and waste enough of the Winston's time and resources that my DPS can clean up his backline and hold point without pressure.</p>
         <p>To replicate this kind of play in your own games, you should have a general knowledge of the abilities and goals of the hero you are trying to mind game. The reason the Winston in the above example fell for the mind game was because I presented myself as enticing bait and played as if I was desperately running away from him while actually luring him into a disadvantageous position.</p>
-        <h3>Shield Bash Jumps</h3>
+        <h3 id="shield-bash-jumps">Shield Bash Jumps</h3>
         <p>Brig's Shield Bash can take advantage of sloped map geometry to launch Brig into the air for flashy rollouts. While Shield Bash jumps range from "extremely situational" to "completely useless," I still recommend learning some just for the fun of doing it. Video guides for jumps on every map in the game can be found on YouTube. The jumps I'd recommend starting with are on the first point of Junkertown and the last point of King's Row. These jumps are easy to master and are easy to get consistent value with.</p>
 
         <div class="tbl" style="display:flex;flex-direction:row;">
@@ -341,7 +344,7 @@
                 <img src="https://files.catbox.moe/pvqo3i.webp">
             </div>
         </div>
-        <h3>Counterbashing</h3>
+        <h3 id="counterbashing">Counterbashing</h3>
         <p>One of my favorite techs for Brig is the counterbash. Whenever Brig uses her Shield Bash against enemy abilities that also lock a hero into a single-direction forward movement, both abilities will be canceled and both heroes will be knocked to the ground. This interaction specifically affects:</p>
         <ul>
             <li>Reinhardt's Charge</li>
@@ -350,17 +353,17 @@
             <li>Another Brigitte's Shield Bash</li>
             <li>Ashe's B.O.B. when he is running into position</li>
         </ul>
-        <p>While this can be an extremely powerful move when executed properly, the fact that counterbashing knocks you down as well as the enemy means that it has be used with thought. If counterbashing knocks you down within full view of the enemy team then they will kill you before you have the chance to get back up and your own team will not be able to kill whatever enemy you knocked down in the process. Try to only use counterbashing when the enemy is engaging close to your team and far away from their own.</p>
-        <p>Also, it's almost never worth it to try and counterbash B.O.B. since you can displace him with Whipshot or just bash away from him. The only time I would consider counterbashing B.O.B. is to stop a last-second objective stall.</p>
+        <p>While this can be an extremely powerful move when executed properly, the fact that counterbashing knocks <i>you</i> down as well as the enemy means that it has be used with thought. If counterbashing knocks you down within full view of the enemy team then they will kill you before you have the chance to get back up and your own team may not be able to kill whatever enemy you knocked down in the process. Try to only use counterbashing when the enemy is engaging close to your team and far away from their own.</p>
+        <p>Also, it's almost never worth it to try and counterbash B.O.B. since you can displace him with Whipshot or just Bash away from him. The only time I would consider counterbashing B.O.B. is to stop a last-second objective stall. We'll go over this in more detail in the later section on <a href="#ashe">counterplay to Ashe</a>.</p>
     </section>
     <hr>
     <section><!-- Counterplay -->
-        <h2>Counterplay</h2>
+        <h2 id="counterplay">Counterplay</h2>
         <p>A lot of Brig's ability to shut down other heroes, especially those that counter her, will lie in the player's ability to ult track. This does not have to be a perfected skill for the vast majority of Brig players, it is enough to just think generally between fights as to whether an enemy has their Ultimate or not. You will guess wrong sometimes and that's fine. You will guess right sometimes and be rewarded. </p>
         <div class="tbl abbr nav">
             <div class="tbl-header">Click a Hero to jump to their section</div><!--
             Tank
-            --><div style="display:flex;flex-direction:row;gap:7px;flex-wrap:wrap;justify-content:center;margin-bottom:10px">
+            --><div class="hero-button-container" style="margin-bottom:10px;max-width:840px;">
                 <a href="#dva"><span class="hero-button strong"><img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca114f72193e4d58a85c087e9409242f1a31e808cf4058678b8cbf767c2a9a0a.png" alt="D.Va" ></span></a>
                 <a href="#domina"><span class="hero-button"><img src ="https://d15f34w2p8l1cc.cloudfront.net/overwatch/1161c112292c56c052c0ae711792fcde06e3251b98bc9709e582dd7585b5dcd6.png" alt="Domina"></span></a>
                 <a href="#doomfist"><span class="hero-button strong"><img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/13750471c693c1a360eb19d5ace229c8599a729cd961d72ebee0e157657b7d18.png" alt="Doomfist"></span></a>
@@ -378,7 +381,7 @@
             </div>
             <hr style="margin-left:10px;margin-right:10px;border-style:dashed;"><!--
             DPS
-            --><div style="display:flex;flex-direction:row;gap:7px;flex-wrap:wrap;justify-content:center;">
+            --><div class="hero-button-container">
                 <a href="#anran"><span class="hero-button"><img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/2cdf460c6080a031258e513713d1d635a8e68799cb5d7e27774be8963e95f6a3.png" alt="Anran"></span></a>
                 <a href="#ashe"><span class="hero-button weak"><img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/8dc2a024c9b7d95c7141b2ef065590dbc8d9018d12ad15f76b01923986702228.png" alt="Ashe" ></span></a>
                 <a href="#bastion"><span class="hero-button weak"><img src="https://d15f34w2p8l1cc.cloudfront.net/overwatch/4d715f722c42215072b5dd0240904aaed7b5285df0b2b082d0a7f1865b5ea992.png" alt="Bastion" ></span></a>
@@ -410,10 +413,12 @@
         <h4 id="dva">D.Va</h4>
         <p>One of the many advantages of playing Brig is that D.Va is never a problem, even when she is meta and overtuned. Your shield provides just enough defense that she cannot safely shred both it and you just using her Rockets, so D.Vas will rarely commit to running into you unless they are trying to dive your allies in the backline, in which case you can just Whipshot her, hold your shield up to block her Rockets, and then start swinging on her.</p>
         <!-- Domina -->
-         <h4 id="domina">Domina</h4>
+        <h4 id="domina">Domina</h4>
+        <p>The matchup between Domina and Brig is something of a game of checks and balances. In a sense, Domina is a hard counter to Brig; her primary fire has a longer range than Whipshot, letting her effectively punish Brig from a safe distance. Her Ultimate, Panopticon, turns one of Brig's strengths into a major weakness; Brig's flail swing goes through shields, which is normally a distinct advantage, however this means that Brig is one of the few characters who cannot break the shield Panopticon imprisons her within. Domina's Crystal damages through shields and her combination knockback/stun ability means Domina can even gain the upper hand in close-range duels. Conversely, Brig can also be a hard counter to Domina. As one of the few Tanks with no mobility cooldowns, Domina can't do anything to stop Brig from swinging on her if she doesn't have her Repulsors. Even then, the Repulsors can be blocked with your shield if you manage to predict its use. Furthermore, Panopticon is also blocked by shield, meaning Brig can completely negate Domina's Ultimate without even using Rally.</p>
+        <p>The Domina matchup is ultimately a test of your ability to gauge the tempo of fights as Brig. Much like Sigma, Brig can somewhat reliably win a 1v1 against Domina but only if you choose the right time to close the distance. Avoid letting her poke you out of valuable positions and be ready to jump on her as soon as the opportunity presents itself.</p>
         <!-- Doomfist -->
         <h4 id="doomfist">Doomfist</h4>
-        <p>Doomfist is a fun Tank for Brig to play against as his most powerful tool for setting up kills, his Punch, can be countered by simply bashing into it. Refer to the above section on Counterbashing for best practices on engaging with this. At Diamond rank and above, this interaction will become a mind game as good Dooms are fully aware that you will try to counterbash them and will try to predict your Bash so that they can land their punch either before or after you use it.</p>
+        <p>Doomfist is a fun Tank for Brig to play against as his most powerful tool for setting up kills, his Punch, can be countered by simply bashing into it. Refer to the above section on <a href="#counterbashing">Counterbashing</a> for best practices on engaging with this. At Diamond rank and above, this interaction will become a mind game as good Dooms are fully aware that you will try to counterbash them and will try to predict your Bash so that they can land their punch either before or after you use it.</p>
         <!-- Hazard -->
         <h4 id="hazard">Hazard</h4>
         <p>Not only can you cancel Hazard's Ultimate entirely by stunning him with Rally, you can always block his Ultimate from hitting you specifically by just holding your shield up at a ~45° angle. Once you figure out how to do this, you should literally never be caught by Hazard's Ultimate for the rest of your life.</p>
@@ -517,6 +522,7 @@
         <p>As you climb in ranks, you should also be aware of a specific trick that Tracers like to do, where they will blink 2-3 times off of an elevated surface and try to drop the Bomb on your head before Recalling. It's a very resource-intensive move, but it makes for a flashy clip so you'll see Tracers try this somewhat frequently. After you've seen it a few times you'll get a sense of when it's coming. You can block the Bomb by holding your shield upwards, however this trick is actually best countered by just bashing to another position since it only really works on a stationary target.</p>
         <!-- Vendetta -->
         <h4 id="vendetta">Vendetta</h4>
+        <p>Unsurprisingly, this is a truly miserable matchup. If Vendetta decides to kill you, she will probably succeed in doing so; Brig has very little counterplay to Vendetta's engagements as <i>all</i> of Vendetta's abilities (her Firestrikes, her Whirlwind Dash, her Soaring Slice, and even her basic sword swings) go through Brig's shield while Brig's flail swings and Whipshot can both be blocked by Vendetta's Warding Stance. The best thing you can do is ban her when you load into a match as I often do. Failing that, the best thing for you to do when Vendetta runs at you is to just full send it. Hit her as much as you can and Bash <i>into</i> her, not away from her. Unlike most other heroes, Bashing away from Vendetta is unlikely to save you and if you Bash into her instead then you might catch her trying to use Whirlwind Dash, which uniquely can be <a href="#counterbashing">Counterbashed</a>. If you manage to pull this off then your team will almost certainly be able to kill her while you are knocked down.</p>
         <!-- Venture -->
         <h4 id="venture">Venture</h4>
         <p>Rally is a great counter to Venture's Ultimate as it cannot go through shields. The expanded shield size of Rally lets you protect multiple teammates in addition to yourself, and Rally lasts longer than Tectonic Shock does.</p>
@@ -525,7 +531,7 @@
     </section>
     <hr>
     <section><!-- General Advice -->
-        <h2>General Advice for Lower Ranked Players</h2>
+        <h2 id="general-advice">General Advice for Lower Ranked Players</h2>
         <p>This is a slightly less-organized collection of tips and general advice for players ranked between Bronze and Platinum. As mentioned at the top of this page, I started my Brig journey at Silver 4, so I have experienced just about every Elo in the game. While the above guide as a whole will be applicable regardless of your rank, this section is more applicable to newer or less-skilled players looking to improve.</p>
         <ul>
             <li><p><strong>Turn down your sensitivity.</strong> If you are ranked Gold or below, I promise you that there is a very good chance that your sensitivity is way too high and you are missing easy whipshots/losing easy duels because of it. For reference, I use 1800 DPI with an in-game sensitivity of 3.26, resulting in an eDPI of 5868 (Your eDPI is simply your mouse's DPI multiplied by your in-game sensitivity). Even this is on the high end of sensitivity, and many professional players have eDPIs between 2500-5000. But you don't even need to bother with the specifics of these numbers. For a good rule of thumb, go into the Practice Range and adjust your sensitivity until the action of moving your mouse from the left side of your mousepad to the right side of your mousepad results in your character doing a 180° turn. It will feel really bad and uncomfortable at first, but if you keep practicing with this new sensitivity you will quickly grow used to it and your gameplay will improve by an order of magnitude.</p></li>
@@ -533,6 +539,47 @@
         </ul>
     </section>
   </article>
+  <nav id="sidebar">
+    <span style="display:block;text-align:center">[Table of Contents]</span>
+    <div class="toc"><ol>
+    <li value="0" style="list-style-type:none;margin-left:-19px"><a href="#">(Top)</a></li>
+    <li><a href="#the-fundamentals">The Fundamentals</a></li>
+        <ol>
+        <li><a href="#controlling-space">Controlling Space</a></li>
+            <ol>
+            <li><a href="#setting-up">Setting Up</a></li>
+            <li><a href="#dropping-from-high-ground">Dropping From High Ground</a></li>
+            </ol>
+        <li><a href="#positioning">Positioning</a></li>
+            <ol>
+            <li><a href="#downtime">Downtime</a></li>
+            <li><a href="#understanding-the-game-state">Understanding the Game State</a></li>
+            <li><a href="#get-off-the-corner">Get Off the Corner</a></li>
+            <li><a href="#not-feeding">Not Feeding</a></li>
+            <li><a href="#not-tilting">Not Tilting</a></li>
+            </ol>
+        <li><a href="#using-your-kit">Using Your Kit</a></li>
+            <ol>
+            <li><a href="#using-whipshot">Using Whipshot</a></li>
+            <li><a href="#shield-management">Shield Management</a></li>
+            <li><a href="#how-inspire-works">How Inspire Works</a></li>
+            <li><a href="#using-rally">Using Rally</a></li>
+            <li><a href="#a-brief-note-on-perks">A Brief Note on Perks</a></li>
+            </ol>
+        <li><a href="#playing-with-your-tank">Playing With Your Tank</a></li>
+        <li><a href="#standing-on-the-objective">Standing on the Objective</a></li>
+        <li><a href="#protecting-your-other-support">Protecting Your Other Support</a></li>
+        </ol>
+    <li><a href="#advanced-tech">Advanced Tech</a></li>
+        <ol>
+        <li><a href="#mind-games">Mind Games</a></li>
+        <li><a href="#shield-bash-jumps">Shield Bash Jumps</a></li>
+        <li><a href="#counterbashing">Counterbashing</a></li>
+        </ol>
+    <li><a href="#counterplay">Counterplay</a></li>
+    <li><a href="#general-advice">General Advice for Lower Ranked Players</a></li>
+  </ol></div>
+  </nav>
   <footer>
       <script  type="text/javascript" src="ability-table.js"></script>
   </footer>
