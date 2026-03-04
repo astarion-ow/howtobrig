@@ -1,0 +1,8 @@
+@media (max-width:768px){
+    html{
+        font-size:42px;
+    }
+    h1{
+        color:red !important;
+    }
+}
