@@ -31,26 +31,19 @@
 
 html{
     scroll-behavior:smooth;
+    width:100%;
+    overflow:auto;
 }
 
 body{
+    position:relative;
     background-color: var(--bg-color);
+    background-image: var(--bg-image);
     color: var(--text-color);
-    width: 1080px !important;
-    max-width:100% !important;
+    max-width:100%;
     margin:auto;
     font-family: var(--text-font);
-}
-
-#bg-img{ /* hides "open image" pointer events from bg img */
-    width:100%;
-    height:100vh;
-    position:fixed;
-    top:0;
-    left:0;
-    background-image: var(--bg-image);
-    pointer-events:none;
-    z-index:-1;
+    overflow:auto;
 }
 
 article{
@@ -58,9 +51,16 @@ article{
     padding:0 21px;
 }
 
+footer{
+    padding:0 21px;
+    text-align:center;
+    color:var(--faded-color);
+}
+
 /* headers */
 h1,h2,h3,h4,h5,h6{
     scroll-margin-top:14px;
+    line-height:normal;
 }
 
 h2,h3,h4,h5,h6{

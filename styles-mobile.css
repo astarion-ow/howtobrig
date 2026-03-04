@@ -1,8 +1,39 @@
-@media (max-width:768px){
+@media screen and (max-width:768px){
     html{
-        font-size:42px;
+        font-size:21px;
+        overflow-x:hidden;
     }
-    h1{
-        color:red !important;
+
+    body{
+        overflow-x: hidden;
+    }
+
+    article{
+        padding:0;
+    }
+
+    #brig-hero-card{
+        display:none;
+    }
+
+    img{
+        margin:auto;
+        text-align:center;
+    }
+
+    .float-right,.float-left{
+        margin:0;
+    }
+
+    p{
+        padding:1rem;
+    }
+
+    h2,h3{
+        font-size:clamp(1rem,1.4rem,2rem);
+    }
+    
+    h4,h5,h6{
+        font-size:1rem;
     }
 }

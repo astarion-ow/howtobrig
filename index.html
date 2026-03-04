@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" /> <!-- mobile css doesn't work without this -->
     <title>How to Play Brigitte</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles-mobile.css" />
@@ -12,7 +13,7 @@
     <script  type="module"  src="https://cdn.jsdelivr.net/npm/stacked-alpha-video/+esm"></script> <!-- web component for transparent av1 -->
   </head>
 
-  <body><div id="bg-img"></div><article>
+  <body><!--<div id="bg-img"></div>--><article>
     <h1>How to Play Brigitte</h1>
 
     <img src="assets/psychube.webp" title="Turned Hunter Brigitte by xin_cere" alt="Turned Hunter Brigitte by xin_cere" width="420px" height="420px" class="float-left"><p><strong>Brigitte</strong> is a very powerful Support in the right hands. While her kit may seem situational, intelligent practice can make her an "evergreen" hero pick capable of playing both with and against any team composition you'll find on the ranked ladder.</p>
@@ -56,10 +57,11 @@
         <p>Outside of certain techs that let her abuse map geometry with Shield Bash, Brig has no vertical mobility whatsoever. When electing to drop from high ground to swing on the enemy team, keep in mind how difficult it will be for you to return to that high ground. Some high grounds, such as the tall buildings on the second point of Hollywood, are easy for Brig to access due to the elevators. Other high grounds, like the buildings overlooking the first point of King's Row, will take significantly longer for Brig to get to and may also put Brig in view of the enemy team, allowing them to kill you while rotating. If you are not confident that you can return to the high ground before the start of the next team fight, then reconsider dropping down.</p>
 
         <h4 id="controlling-doorways"><span class="prop">1.13</span>Controlling Doorways</h4>
+        <p>Similar to Junkrat, Brig becomes a real problem if she locks you into a small room. You can stop a lot of heroes from leaving a room by bodyblocking the doorway, which simply means standing in the middle of it. Because of how collision works in <i>Overwatch</i>, many heroes cannot fit through a door if Brig is standing in the way. Limiting an enemy's escape route in this manner makes their movement much easier to predict, which increases your lethality significantly.</p>
 
         <h3 id="positioning">Positioning</h3>
         <h4 id="downtime"><span class="prop">1.21</span>Downtime</h4>
-        <blockquote>If you wait by the river long enough, the bodies of your enemies will float by.<span class="attr">A very liberal translation of Sun Tzu</span></blockquote>
+        <blockquote>If you wait by the river long enough, the bodies of your enemies will float by.<span class="attr">An erroneous translation of a supposed Chinese proverb</span></blockquote>
         <p>Don't be afraid of downtime. There will be moments during your matches when you are functionally doing nothing other than standing around. An impatient Brig player who uses this time to get more involved in a fight will die more often and die early, potentially losing your team a round or even the game. Sometimes, standing menacingly is the most valuable thing a Brig can do.</p>
         <p>In the below example on Watchpoint: Gibraltar, you can see that I am essentially standing still in spawn for a solid 20 seconds at the start of the game . Since my team is taking opening spam damage, my job is just to sit back and toss packs until my Tank and DPS manage to get through to set up their own engagements.</p>
         <p>The key to understanding when it is not only acceptable but at times even advantageous to do absolutely nothing is the concept of <b>turns</b>. This links into understanding the game state writ large; "turns" are implicit forms of the game state where one team is advantaged in resources and is staged to capitalize on said advantage. Those times when it feels like your team of randos just "clicks" and you clean up the easiest fight of your life are those moments where your team all simultaneously understood that it was their turn to make a play. Brig is a somewhat extreme example of the rewards and punishments of turns; a Brig who goes for a frontline play out of turn is the archetype of a low-ranked Brig who gets flamed for feeding on repeat while a Brig who makes the most of their turns can get away with plays that seem unbelievable for a Brig to be getting away with.</p>
@@ -594,7 +596,9 @@
   </ol></div>
   </nav>
   <footer>
-      <script  type="text/javascript" src="ability-table.js"></script>
+    <hr>
+    <p class="footer-text">attribution</p>
+    <script  type="text/javascript" src="ability-table.js"></script>
   </footer>
 </body>
 </html>
