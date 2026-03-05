@@ -52,7 +52,7 @@ article{
 }
 
 footer{
-    padding:0 21px;
+    padding:0 1rem 1rem 1rem;
     text-align:center;
     color:var(--faded-color);
 }
@@ -173,6 +173,10 @@ figcaption{
 .clear{
     clear:both;
     display:block;
+}
+
+ul{
+    list-style-type:circle;
 }
 
 h4.strong::after,
@@ -704,9 +708,21 @@ h4, h5, h6{
 }
 
 blockquote{
+    position:relative;
     max-width:70vw;
     margin:2.1rem auto;
     font-style:italic;
+}
+
+blockquote::before{
+    content:"“";
+    font-family:serif;
+    font-size:8.4rem;
+    color:goldenrod;
+    position:absolute;
+    top:56%;
+    z-index:-1;
+    opacity:0.21;
 }
 
 blockquote .attr{
@@ -717,4 +733,38 @@ blockquote .attr{
 
 blockquote .attr::before{
     content:"—";
+}
+
+.footer-text{
+    cursor:pointer;
+}
+
+.footer-text:hover{
+    text-decoration:underline;
+}
+
+#attribution{
+    visibility:hidden;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:var(--text-color);
+    background:var(--bg-color);
+    background-image:var(--bg-image);
+    border:1px solid var(--white);
+    border-radius:10px;
+    text-align:center;
+}
+
+#attribution ul{
+    padding:1rem;
+}
+
+#attribution li{
+    list-style:none;
+}
+
+.show{
+    visibility:visible !important;
 }

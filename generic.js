@@ -8,3 +8,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         }
     });
 });
+
+function showAttribution(){
+    var popup = document.getElementById("attribution");
+    popup.classList.toggle("show");
+}
