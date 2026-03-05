@@ -58,6 +58,7 @@ footer{
     text-align:center;
     color:var(--faded-color);
     max-width:1080px;
+    margin:auto;
 }
 
 /* headers */
