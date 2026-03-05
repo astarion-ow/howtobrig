@@ -48,7 +48,9 @@ body{
 
 article{
     line-height:var(--line-height);
+    max-width:1080px;
     padding:0 21px;
+    margin:auto;
 }
 
 footer{
