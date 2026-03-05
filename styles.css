@@ -57,6 +57,7 @@ footer{
     padding:0 1rem 1rem 1rem;
     text-align:center;
     color:var(--faded-color);
+    max-width:1080px;
 }
 
 /* headers */
