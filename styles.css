@@ -713,7 +713,7 @@ h4, h5, h6{
 
 blockquote{
     position:relative;
-    max-width:70vw;
+    max-width:70%;
     margin:2.1rem auto;
     font-style:italic;
 }

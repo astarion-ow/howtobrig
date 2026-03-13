@@ -32,8 +32,12 @@
     h2,h3{
         font-size:clamp(1rem,1.4rem,2rem);
     }
-    
+
     h4,h5,h6{
         font-size:1rem;
+    }
+
+    blockquote{
+        max-width:100%;
     }
 }
