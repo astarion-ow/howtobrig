@@ -12,7 +12,7 @@
     --highlight-blue: #15EEEE;
     --highlight-green: forestgreen;
     --highlight-red: crimson;
-    --highlight-yellow: gold;
+    --highlight-yellow: #ffd700;
     --faded-color:#383838;
     --white:#fcfcfc;
     /* font */
@@ -46,19 +46,21 @@ body{
     overflow:auto;
 }
 
+main,
+nav,
 article{
     line-height:var(--line-height);
-    max-width:1080px;
-    padding:0 21px;
-    margin:auto;
+    padding-left:21vw;
+    padding-right:21vw;
 }
 
+
 footer{
-    padding:0 1rem 1rem 1rem;
+    line-height:var(--line-height);
+    padding:0 21vw 1rem 21vw;
+    margin:auto;
     text-align:center;
     color:var(--faded-color);
-    max-width:1080px;
-    margin:auto;
 }
 
 /* headers */
@@ -110,6 +112,25 @@ h5{
     margin-right:14px;
     font-variant-numeric:oldstyle-nums;
     color:var(--faded-color);
+}
+
+/* articles */
+article{
+    padding-top:1rem;
+    padding-bottom:1rem;
+    background-image: var(--bg-image);
+}
+
+article#tank{
+    background-color:#dc143c59;
+}
+
+article#support{
+    background-color:#15eeee59;
+}
+
+article#dps{
+    background-color:#ffd70059;
 }
 
 
