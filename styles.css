@@ -50,10 +50,13 @@ main,
 nav,
 article{
     line-height:var(--line-height);
-    padding-left:21vw;
-    padding-right:21vw;
+    width:100%;
 }
 
+section{
+    width:clamp(56vw,1080px,100vw);
+    margin:auto;
+}
 
 footer{
     line-height:var(--line-height);
