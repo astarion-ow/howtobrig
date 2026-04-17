@@ -38,7 +38,7 @@ const dataMap = {
         name    : "Barrier Shield",
         desc    : "Hold secondary fire to deploy a frontal energy barrier.",
         cooldown: 5,
-        health  : 250,
+        health  : 300,
         regen   : 85,
         penalty : 30
     },
