@@ -10,6 +10,7 @@
     <script  type="text/javascript" src="data.js"></script>
     <script  type="text/javascript" src="generic.js"></script>
     <script  type="text/javascript" src="toc.js" defer></script>
+    <script  type="text/javascript" src="toc-toggle.js" defer></script>
     <script  type="module"  src="https://cdn.jsdelivr.net/npm/stacked-alpha-video/+esm"></script> <!-- web component for transparent av1 -->
   </head>
 
@@ -145,23 +146,25 @@
         <p>Whipshot is the simplest part of Brig's kit. It's also one of the strongest tools in the game and among the most satisfying abilities to land. Much as the "boop" is often relegated to mere humor, there's a reason that only a small handful of characters have any kind of real "boop" ability. Being able to completely halt momentum and displace heroes is extremely valuable, even when you aren't knocking people off the map, and this is doubly true when you can boop people from 20 entire meters away.</p>
         <p>As I said, the ability is simple. You click the button and the head of Brig's flail will launch forward and hit whatever you are aiming at. That's it. In addition, Whipshot has a very short cooldown of 4 seconds, meaning you can spam this ability pretty freely.</p>
         <p>The only nuance to understand about Whipshot is that it is a projectile weapon, not a hitscan one. In the words of Soldier: 76, "aim where they're going, not where they are." Also, don't be afraid to just hit the biggest guy you see ad infinitum. Whipping the Tank is far easier than whipping a DPS or Support, and knocking the Tank away is one of Brig's primary purposes.</p>
-        <p>There is one significant drawback to Whipshot which you don't anticipate screwing you over until it actually does so. Missing your Whipshot can and will punish you. The farther away your target is, the riskier it is to try and Whipshot them. This is especially true for trying to Whipshot flying characters. Unlike the rest of Brig's abilities, your Whipshot cannot be animation-cancelled via another input. When you click Whipshot, you are locked into an animation until the head of the flail comes back to you, which only happens once the Whipshot has either hit an enemy or an environmental surface. If it hits neither (like in the case of missing a Whipshot on a flyer), then you will be motionless for almost an entire half-second waiting for the Whipshot to reach max range and return, which can be a very long time in the heat of battle. In addition, you are slowed to 50% movement speed when your Whipshot is active, so that's a half-second where you are slow and unable to fight back. Be smart about going for risky Whipshots; if you are eating damage from one angle then it is probably not a good idea to chance a Whipshot on a 20HP Echo in a separate direction unless you are very confident that you can land the hit.</p>
+        <p>There is one significant drawback to Whipshot which you don't anticipate screwing you over until it actually does so. Missing your Whipshot can and will punish you. The farther away your target is, the riskier it is to try and Whipshot them. This is especially true for trying to Whipshot flying characters. Unlike the rest of Brig's abilities, your Whipshot cannot be animation-cancelled via another input. When you click Whipshot, you are locked into an animation until the head of the flail comes back to you, which only happens once the Whipshot has either hit an enemy or an environmental surface. If it hits neither (like in the case of missing a Whipshot on a flyer), then you will be motionless for almost an entire half-second waiting for the Whipshot to reach max range and retract, which can be a <em>very</em> long time in the heat of battle. In addition, you are slowed to 50% movement speed while your Whipshot is active, so that's a half-second where you are slow <em>and</em> unable to fight back. Be smart about going for risky Whipshots; if you are eating damage from one angle then it is probably not a good idea to chance a Whipshot on a 20HP Echo in a separate direction unless you are very confident that you can land the hit.</p>
         
         <h5><span class="prop">1.321</span>Pre-Aiming Escape Routes</h5>
 
-        <h5><span class="prop">1.322</span>Don't Save Your Enemy</h5>
-        <p>Let's say you've read the tempo of a team fight perfectly, you've found your timing to push with your Tank, and now you are going in for the kills. The last thing you want to do in this scenario is boop your enemy into safety with your Whipshot. The knockback can be pretty severe, and if you are playing alongside Tanks such as Reinhardt, Junker Queen, or Roadhog, then if you use your Whipshot without guaranteeing the elim then you may well boop the enemy out of your Tank's effective range and accidentally save their life. It took me quite a while to learn the discipline to not always go for close-range Whipshots, so don't feel bad if you make this mistake a few times.</p>
+        <h5 id="don't-save-your-enemy"><span class="prop">1.322</span>Don't Save Your Enemy</h5>
+        <p>Let's say you've read the tempo of a team fight perfectly, you've found your timing to push with your team, and now you are going in for the kills. The last thing you want to do in this scenario is boop your enemy into safety with your Whipshot. The knockback can be pretty severe, and if you are playing alongside Tanks such as Reinhardt, Junker Queen, or Roadhog, then if you use your Whipshot without guaranteeing the elim then you may well boop the enemy out of your Tank's effective range and accidentally save their life. It took me quite a while to learn the discipline to not always go for close-range Whipshots, so don't feel bad if you make this mistake a few times.</p>
 
         <h4 id="shield-management"><span class="prop">1.33</span>Shield Management</h4>
+        <p>One of the major triggers the enemy team will be looking for to punish you on Brig is your shield breaking. Brig is unable to use Bash if her shield is broken, regardless of whether the ability is off of cooldown or not. Furthermore, if your shield breaks then you will be unable to redeploy it until it has regenerated <em>completely</em> to full, which takes a total of five agonizing seconds. Since Brig is often positioned relatively close to active fights compared to other supports, it is crucial that you keep your shield's HP from reaching zero. In fact, preserving your shield's HP is <em>more valuable</em> than preserving Brig's actual HP. You can maximize the value you get out of your shield by spreading the damage between both the shield and Brig herself. Put simply, if you are holding up your shield and blocking incoming damage, when your shield HP gets low you should drop shield and <em>let the enemy shoot you</em> rather than letting your shield break.</p>
+
+        <h5 id="shield-dancing"><span class="prop">1.332</span>Shield Dancing</h5>
+        <p>In the context of Brig, "shield dancing" refers to repeatedly dropping and redeploying your shield while taking damage either mid-fight or just while rotating. There is a certain tempo you'll have to learn when doing this mid-fight; Brig's normal flail attack can be animation-cancelled by deploying your shield, so if you mistime your inputs when alternating swing→shield→swing→shield then you may accidentally cancel one of your swings before it has time to actually connect with the enemy.</p>
+
         <h5 id="using-the-third-person-camera"><span class="prop">1.331</span>Using the Third-Person Camera</h5>
         <p>Brig is part of a very limited roster of characters who can freely switch to a third-person perspective mid-game. The third-person camera is incredibly important to Brig's kit, as it allows you to scout around corners and see threats you otherwise would not be able to see.</p>
         <div class="callout callout-example">
             <span class="callout-video"><video controls><source src="https://pub-5f8351c31ed146c89ce2f770db6fb9c4.r2.dev/ex_shield-peek.mp4" type="video/mp4"></video></span>
             <div class="callout-content"><p>Peeking around corners is especially useful when marking flankers, such as dealing with the Tracer in this clip.</p></div>
         </div>
-
-        <h5 id="shield-dancing"><span class="prop">1.332</span>Shield Dancing</h5>
-        <p>In the context of Brig, "shield dancing" refers to repeatedly dropping and redeploying your shield while taking damage either mid-fight or just while rotating. Remember, the shield is flimsy. You can maximize the value you get out of your shield by spreading the damage between both the shield and Brig herself. There is a certain tempo you'll have to learn when doing this mid-fight; Brig's normal flail attack can be animation-cancelled by deploying your shield, so when you alternate swing→shield→swing→shield then you may accidentally cancel one of your swings before it has time to actually connect with the enemy.</p>
 
         <h5 id="shielding-teammates"><span class="prop">1.333</span>Shielding Teammates</h5>
         <p>Because Brig's shield is so flimsy and her only movement ability is directly tied to it not being broken, you have to be selective about using it to protect teammates. There are two primary scenarios in which I will deliberately stand in front of a teammate with my shield.</p>
@@ -175,8 +178,8 @@
         </div>
 
         <h4 id="shield-bashing"><span class="prop">1.34</span>Shield Bashing</h4>
-        <p>Whenever you are in a close-range fight with another hero, try to get into the habit of backing up slightly as soon as you Bash into the enemy. This is called "spacing" and is meant to take advantage of the fact that Brig's flail swing has a longer range than the standard Quick Melee of any other hero (Flail has a range of 6 meters while Quick Melee has a range of 2.5 meters). Bashing into an enemy obviously puts you as close to them as possible, but if you back up ever so slightly after the Bash then you will be out of melee range while they are still in flail range. This is especially valuable against heroes like Sigma who rely on the Quick Melee as part of their normal damage combos.</p>
-        <p>As of Season 1 of 2026, Brigitte is part of the "Survivor" sub-role, which grants the passive to immediately activate health regeneration when using a movement ability.</p>
+        <p>Whenever you are in a close-range fight with another hero, try to get into the habit of backing up slightly as soon as you Bash into the enemy. This is called "spacing" and is meant to take advantage of the fact that Brig's flail swing has a longer range than the standard Quick Melee of any other hero (Flail has a range of 6 meters while Quick Melee has a range of 2.5 meters). Bashing into an enemy obviously puts you as close to them as possible, but if you back up ever so slightly after the Bash then you will be out of melee range while they are still in flail range. This is especially valuable against heroes like Sigma or Winston who rely on the Quick Melee as part of their normal damage combos.</p>
+        <p>As of Season 1 of 2026, Brigitte is part of the "Survivor" sub-role, which grants the passive to immediately activate health regeneration when using a movement ability. While this isn't a major change, it is a valuable buff to Brigitte's uptime as you can reduce the time it takes for you to re-enter a fight if you disengage using Bash.</p>
 
         <h4 id="how-inspire-works"><span class="prop">1.35</span>How Inspire Works</h4>
         <p>I've saved discussing Inspire for the end of this kit breakdown (excepting the Rally section below) because this ability is needlessly overcomplicated by the <cite>Overwatch</cite> community, especially casual players. The beauty of Inspire is that you don't need to think about it virtually ever. Every single thing you do that inflicts any damage whatsoever (i.e. swinging the flail, landing a Whipshot, and hitting enemies with Bash) will proc inspire. If you are playing with the rest of Brig's kit to any degree of proficiency then the Inspire healing will come naturally. In fact, prioritizing Inspire is one of the most common ways for amateur Brig players to get themselves killed; they get antsy about not having Inspire up for a while and then they go into a bad position trying to hit a Whipshot and then they die. For the sake of knowledge and completeness, I will explain exactly how Inspire works below, but I truly encourage you to stop caring about this passive ability; it is powerful, yes, but it is only powerful when you are doing everything <i>else</i> right. It is called a passive for a reason. Treat it as such.</p>
@@ -639,47 +642,60 @@
             <li><p><strong>Play like 10-20 hours of <cite>Dead by Daylight</cite>.</strong> I am being so completely serious. DBD is a terrible game overall with an extremely steep learning curve so I wouldn't dedicate <em>too</em> much time to this but <cite>Dead by Daylight</cite> is in a wholly unique position of being a popular PvP game with a gameplay loop centering almost entirely around movement-based mind games. The skills you develop from these mind games translate surprisingly well in helping you with your positioning as Brig during disadvantageous fights. This largely applies to the Survivor role in DBD rather than the Killer role but there is value in practicing both. The YouTuber <a href="https://youtube.com/@NotOtzdarva">Otzdarva</a> is a good starting point for learning the absolute basics of the game because the in-game tutorials are famously bad and will not be of much help to you.</p></li>
         </ul>
     </section></main>
-  <nav id="sidebar">
-    <span style="display:block;text-align:center">[Table of Contents]</span>
-    <div class="toc"><ol>
-    <li value="0" style="list-style-type:none;margin-left:-19px"><a href="#">(Top)</a></li>
-    <li><a href="#the-fundamentals">The Fundamentals</a></li>
-        <ol>
-        <li><a href="#controlling-space">Controlling Space</a></li>
-            <ol>
-            <li><a href="#setting-up">Setting Up</a></li>
-            <li><a href="#dropping-from-high-ground">Dropping From High Ground</a></li>
-            </ol>
-        <li><a href="#positioning">Positioning</a></li>
-            <ol>
-            <li><a href="#downtime">Downtime</a></li>
-            <li><a href="#understanding-the-game-state">Understanding the Game State</a></li>
-            <li><a href="#get-off-the-corner">Get Off the Corner</a></li>
-            <li><a href="#not-feeding">Not Feeding</a></li>
-            <li><a href="#not-tilting">Not Tilting</a></li>
-            </ol>
-        <li><a href="#using-your-kit">Using Your Kit</a></li>
-            <ol>
-            <li><a href="#using-whipshot">Using Whipshot</a></li>
-            <li><a href="#shield-management">Shield Management</a></li>
-            <li><a href="#how-inspire-works">How Inspire Works</a></li>
-            <li><a href="#using-rally">Using Rally</a></li>
-            <li><a href="#a-brief-note-on-perks">A Brief Note on Perks</a></li>
-            </ol>
-        <li><a href="#playing-with-your-tank">Playing With Your Tank</a></li>
-        <li><a href="#standing-on-the-objective">Standing on the Objective</a></li>
-        <li><a href="#protecting-your-other-support">Protecting Your Other Support</a></li>
-        </ol>
-    <li><a href="#advanced-tech">Advanced Tech</a></li>
-        <ol>
-        <li><a href="#mind-games">Mind Games</a></li>
-        <li><a href="#shield-bash-jumps">Shield Bash Jumps</a></li>
-        <li><a href="#counterbashing">Counterbashing</a></li>
-        </ol>
-    <li><a href="#counterplay">Counterplay</a></li>
-    <li><a href="#general-advice">General Advice for Lower Ranked Players</a></li>
-  </ol></div>
-  </nav>
+  <aside id="sidebar">
+    <div id="sidebar-content">
+        <span style="display:block;text-align:center">[Table of Contents]</span>
+        <div class="toc">
+            <ul>
+                <li value="0" style="list-style-type:none;margin-left:-19px"><a href="#">(Top)</a></li>
+                <li><a href="#the-fundamentals">The Fundamentals</a></li>
+                    <ul>
+                    <li><a href="#controlling-space">Controlling Space</a></li>
+                        <ul>
+                            <li><a href="#setting-up">Setting Up</a></li>
+                            <li><a href="#dropping-from-high-ground">Dropping From High Ground</a></li>
+                            <li><a href="#controlling-doorways">Dropping From High Ground</a></li>
+                        </ul>
+                    <li><a href="#positioning">Positioning</a></li>
+                        <ul>
+                            <li><a href="#downtime">Downtime</a></li>
+                            <li><a href="#understanding-the-game-state">Understanding the Game State</a></li>
+                            <li><a href="#standing-on-the-objective">Standing on the Objective</a></li>
+                            <li><a href="#diving-the-enemy-backline">Diving the Enemy Backline</a></li>
+                            <li><a href="#get-off-the-corner">Get Off the Corner</a></li>
+                            <li><a href="#make-yourself-carryable">Make Yourself Carryable</a></li>
+                        </ul>
+                    <li><a href="#using-your-kit">Using Your Kit</a></li>
+                        <ul>
+                            <li><a href="#swing-your-flail">Swing Your Flail</a></li>
+                            <li><a href="#using-whipshot">Using Whipshot</a></li>
+                            <li><a href="#don't-save-your-enemy">Don't Save Your Enemy</a></li>
+                            <li><a href="#shield-management">Shield Management</a></li>
+                                <li><a href="#shield-dancing">Shield Dancing</a></li>
+                                <li><a href="#using-the-third-person-camera">Using the Third-Person Camera</a></li>
+                                <li><a href="#shielding-teammates">Shielding Teammates</a></li>
+                                <li><a href="#shield-bashing">Shield Bashing</a></li>
+                            <li><a href="#how-inspire-works">How Inspire Works</a></li>
+                            <li><a href="#using-rally">Using Rally</a></li>
+                                <li><a href="#shielding-off-enemy-support">Shielding Off Enemy Support</a></li>
+                                <li><a href="#shutting-down-ultimates">Shutting Down Ultimates</a></li>
+                            <li><a href="#a-brief-note-on-perks">A Brief Note on Perks</a></li>
+                        </ul>                    
+                    <li><a href="#protecting-your-other-support">Protecting Your Other Support</a></li>
+                    </ul>
+                <li><a href="#advanced-tech">Advanced Tech</a></li>
+                    <ul>
+                        <li><a href="#mind-games">Mind Games</a></li>
+                        <li><a href="#shield-bash-jumps">Shield Bash Jumps</a></li>
+                        <li><a href="#counterbashing">Counterbashing</a></li>
+                    </ul>
+                <li><a href="#counterplay">Counterplay</a></li>
+                <li><a href="#general-advice">General Advice for Lower Ranked Players</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="sidebar-toggle"><span id="sidebar-toggle-icon">‹</span></div>
+</aside>
   <footer>
     <hr>
     <span class="footer-text" onclick="showAttribution()">attribution</span>

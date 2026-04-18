@@ -99,14 +99,21 @@ h2{
 
 h3{
     font-size:1.75rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    letter-spacing: 0.021em;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    font-variant:small-caps;
+    color:var(--white);
 }
 
-h4{
-    font-size:1.5rem;
-}
-
-h5{
-    font-size:1.35rem;
+h4, h5, h6{
+    font-family:'Fira Mono', monospace;
+    font-weight:500;
+    font-size:1.2rem;
+    letter-spacing:0.021em;
+    color:var(--white);
 }
 
 .prop{
@@ -653,20 +660,37 @@ stacked-alpha-video video {
   display: none;
 }
 
+
 /* sidebar */
+aside{
+    line-height:var(--line-height);
+}
+
 #sidebar{
-    display:none;
     position:fixed;
     top:0;
-    right:0;
+    left:0;
     max-width:350px;
+    height:100vh;
+    display:flex;
+    flex-direction:row-reverse;
+    direction:rtl;
+    transition:transform 0.28s ease-in-out;
+}
+
+#sidebar-content{
     padding-top:1rem;
     padding-right:2rem;
+    background-color:var(--bg-color);
+    background-image:var(--bg-image);
+    direction:rtl;
+    overflow-y:auto;
 }
 
 .toc{
     display:flex;
     flex-direction:column;
+    direction:ltr;
 }
 
 .toc a{
@@ -684,57 +708,32 @@ stacked-alpha-video video {
     font-weight:700;
 }
 
-
-
---
-
-/* =========================
-   Dark Background Header Styling
-============================ */
-
-/* H1 — Main Section */
-h1 {
-  font-family: 'Cinzel', serif;
-  font-weight: 700;
-  font-size: 3rem;
-  color: #F4E1C1;           /* light gold for contrast */
-  letter-spacing: 0.02em;
-  text-shadow: 1px 1px 0 #B88B3D; /* subtle glow for dark bg */
-  margin: 3rem 0 2rem 0;
-  text-align: center;
+#sidebar-toggle{
+    width:10%;
+    background-color:var(--bg-color);
+    border-left:1px solid var(--faded-color);
+    border-right:1px solid var(--faded-color);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    direction:ltr;
 }
 
-/* H2 — Subsection */
-h2 {
-  font-family: 'Cinzel', serif;
-  font-weight: 600;
-  font-size: 2.1rem;
-  color:var(--white);
-  letter-spacing: 0.028em;
-  margin: 2.5rem 0 1.5rem 0;
-  text-align: center;
+#sidebar-toggle-icon{
+    transition:transform 0.28s ease-in-out;
+}
+
+.sidebar-collapsed{
+    transform:translateX(-91%);
+}
+
+.sidebar-flipped{
+    transform:rotate(180deg);
 }
 
 
-h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 700;
-    font-size: 1.7rem;
-    letter-spacing: 0.021em;
-    margin: 2rem 0 1rem 0;
-    text-align: center;
-    font-variant:small-caps;
-    color:var(--white);
-}
-
-h4, h5, h6{
-    font-family:'Fira Mono', monospace;
-    font-weight:500;
-    font-size:1.2rem;
-    letter-spacing:0.021em;
-    color:var(--white);
-}
-
+/* blockquote */
 blockquote{
     position:relative;
     max-width:70%;
@@ -795,4 +794,11 @@ blockquote .attr::before{
 
 .show{
     visibility:visible !important;
+}
+
+@media only screen and (max-width:1080px){ /* pads main content when on narrower screen to prevent sidebar overlap */
+    section{
+        width:clamp(56vw,980px,91vw);
+        margin:auto;
+    }
 }

@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll("h2, h3, h4");
+const sections = document.querySelectorAll("h2, h3, h4, h5");
 const tocLinks = document.querySelectorAll(".toc a");
 
 const observer = new IntersectionObserver(
@@ -15,7 +15,7 @@ const observer = new IntersectionObserver(
         });
     },
     {
-        rootMargin:"-40% 0px -55% 0px",
+        rootMargin:"-14% 0px -56% 0px",
         threshold: 0
     }
 );
