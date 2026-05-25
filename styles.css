@@ -16,8 +16,8 @@
     --faded-color:#383838;
     --white:#fcfcfc;
     /* font */
-    --header-font: Bebas Neue;
-    --text-font: Roboto Flex;
+    --header-font: "Bebas Neue", serif;
+    --text-font: "Roboto Flex", sans-serif;
     /* img */
     --bg-image:url("assets/background-noise.png");
     --brig-idle:url("assets/idle_anim.avif");
@@ -186,6 +186,7 @@ h4, h5, h6{
     margin-top:14px;
     pointer-events:none;
     user-select:none;
+    font-family:sans-serif;
 }
 
 .arrow-break p{
