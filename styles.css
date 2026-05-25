@@ -116,6 +116,60 @@ h4, h5, h6{
     color:var(--white);
 }
 
+.section-header{
+    position:relative;
+    text-align:center;
+    margin:70px 0 0 0;
+}
+
+.section-header h2{
+    color:var(--accent-strong);
+    position:relative;
+    margin: 0 0 1.4rem 0;
+    scroll-margin-top:70px;
+}
+
+.section-header h2::before,
+.section-header h2::after{
+    content:"✦";
+    color:var(--accent-light);
+    font-size:0.84rem;
+    vertical-align:middle;
+    pointer-events:none;
+    user-select:none;
+    display:none;
+}
+
+.section-header h2::before{
+    padding-right:3.5rem;
+}
+
+.section-header h2::after{
+    padding-left:3.5rem;
+}
+
+.section-header p{
+    margin-top:14px;
+    color:var(--accent-light);
+    font-size:0.91rem;
+    letter-spacing:0.18em;
+    font-style:italic;
+    text-transform:uppercase;
+}
+
+.section-header p a{
+    color:var(--accent-light);
+}
+
+.roman{
+    display:block;
+    margin-bottom:14px;
+    color:var(--accent-light);
+    font-size:0.91rem;
+    letter-spacing:0.35em;
+    text-transform:uppercase;
+}
+
 .prop{
     display:inline-block;
     width:56px;
@@ -124,23 +178,39 @@ h4, h5, h6{
     color:var(--faded-color);
 }
 
+.arrow-break{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:14px;
+    pointer-events:none;
+    user-select:none;
+}
+
+.arrow-break p{
+    color:var(--accent-light);
+    margin:0;
+}
+
+.arrow-break p:nth-of-type(1){
+    opacity:0.21;
+}
+
+.arrow-break p:nth-of-type(2){
+    opacity:0.42;
+}
+
+.arrow-break p:nth-of-type(3){
+    opacity:0.7;
+}
+
 /* articles */
 article{
     padding-top:1rem;
     padding-bottom:1rem;
     background-image: var(--bg-image);
-}
-
-article#tank{
-    background-color:#dc143c59;
-}
-
-article#support{
-    background-color:#15eeee59;
-}
-
-article#dps{
-    background-color:#ffd70059;
+    background-color: var(--bg-color);
 }
 
 
@@ -473,13 +543,13 @@ hr{
 }
 
 .tbl.abbr{
-    max-width:91%;
+    width:fit-content;
+    max-width:70%;
 }
 
 .tbl.nav{
     border:2px solid rgb(56,56,56);
     border-radius:14px;
-    padding-bottom:10px;
     overflow:hidden;
 }
 
@@ -488,7 +558,6 @@ hr{
     font-weight:700;
     margin:0 0 10px 0;
     padding:5px 0;
-    background:rgb(56, 56, 56);
 }
 
 .tbl-row{
@@ -508,6 +577,7 @@ hr{
 }
 
 .hero-button-container{
+    position:relative;
     display:flex;
     flex-direction:row;
     gap:7px;
@@ -515,6 +585,38 @@ hr{
     justify-content:center;
     align-items:center;
     margin:auto;
+    padding:0 21px;
+    overflow:hidden;
+}
+
+.hero-button-container[data-role~="tank"]::before,
+.hero-button-container[data-role~="dps"]::before,
+.hero-button-container[data-role~="support"]::before{
+    position:absolute;
+    bottom:0;
+    left:1.4rem;
+    font-size:7rem;
+    font-variant:small-caps;
+    font-weight:500;
+    opacity:0.14;
+    pointer-events:none;
+    user-select:none;
+    color:var(--accent-strong);
+    font-family:var(--text-font);
+    transform:translateY(-100%);
+    display:none;
+}
+
+.hero-button-container[data-role~="tank"]::before{
+    content:"Tank";
+}
+
+.hero-button-container[data-role~="dps"]::before{
+    content:"Damage";
+}
+
+.hero-button-container[data-role~="support"]::before{
+    content:"Support";
 }
 
 .hero-button{
@@ -794,6 +896,12 @@ blockquote .attr::before{
 
 .show{
     visibility:visible !important;
+}
+
+/* tools */
+.inv{
+    pointer-events:none;
+    user-select:none;
 }
 
 @media only screen and (max-width:1080px){ /* pads main content when on narrower screen to prevent sidebar overlap */
