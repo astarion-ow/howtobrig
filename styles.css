@@ -428,6 +428,8 @@ hr{
     height:4rem;
     align-items:center;
     justify-content:center;
+    background-color:var(--bg-color);
+    background-image:var(--bg-image);
     border:2px solid white;
     border-radius:50%;
     opacity:0.49;
@@ -475,6 +477,14 @@ hr{
     border-radius:5px;
     pointer-events:none;
     z-index:7;
+    opacity:0;
+    transform:translateY(14px);
+    transition:opacity 0.21s ease, transform 0.21s ease;
+}
+
+.ability-tooltip.visible{
+    opacity:1;
+    transform:translateY(0);
 }
 
 .tooltip-name{

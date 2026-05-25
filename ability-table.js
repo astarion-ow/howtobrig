@@ -1,6 +1,9 @@
 let activeDiv = null;
+let activeButton = null;
 let index = 0;
 var data;
+
+const buttons = document.querySelectorAll('.ability-icon');
 
 function getTooltip(a){
     if (a == "flail"){
@@ -94,15 +97,28 @@ function createTooltipAtCursor(event, ability){
 
     document.body.appendChild(div);
     activeDiv = div;
+
+    // allow initial render before animating
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            div.classList.add('visible');
+        })
+    })    
 }
 
 function destroyTooltip(){
     if (activeDiv){
-        activeDiv.remove();
-        activeDiv = null;
+        activeDiv.classList.remove('visible');
+
+        activeDiv.addEventListener('transitioned', () => {
+            activeDiv.remove();
+            activeDiv = null;
+        }, {once:true});
+        
         return;
     }
 }
+
 
 document.querySelectorAll('.ability-icon').forEach(div => {
     div.addEventListener('click', e => {
@@ -111,5 +127,24 @@ document.querySelectorAll('.ability-icon').forEach(div => {
         createTooltipAtCursor(event, ability);
     });
 });
+
+
+buttons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        
+        const clickedButton = button;
+
+        if (activeButton === clickedButton) {
+            destroyTooltip();
+            activeButton = null;
+            return;
+        }
+
+        activeButton = clickedButton;
+        const ability = div.dataset.ability;
+        createTooltipAtCursor(event, ability);
+    })
+})
 
 document.addEventListener('click', destroyTooltip);
