@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fira+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     /* color */
@@ -27,11 +28,6 @@
     /* misc */
     --img-padding: 21px;
     --line-height: 1.5rem;
-}
-
-@font-face{
-    font-family:Symbola;
-    src:url("assets/Symbola.ttf");
 }
 
 html{
@@ -191,7 +187,7 @@ h4, h5, h6{
     margin-top:14px;
     pointer-events:none;
     user-select:none;
-    font-family:"Symbola",sans-serif;
+    font-family:"Noto Sans Display";
 }
 
 .arrow-break p{
