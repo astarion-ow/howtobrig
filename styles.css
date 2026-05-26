@@ -29,6 +29,11 @@
     --line-height: 1.5rem;
 }
 
+@font-face{
+    font-family:Symbola;
+    src:url("assets/Symbola.ttf");
+}
+
 html{
     scroll-behavior:smooth;
     width:100%;
@@ -186,7 +191,7 @@ h4, h5, h6{
     margin-top:14px;
     pointer-events:none;
     user-select:none;
-    font-family:sans-serif;
+    font-family:"Symbola",sans-serif;
 }
 
 .arrow-break p{
