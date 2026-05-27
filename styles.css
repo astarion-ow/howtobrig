@@ -955,7 +955,9 @@ blockquote .attr::before{
 
 .psychube-r,
 .psychube-a,
-.psychube-lly-to-me{
+.psychube-lly-to-me,
+.psychube-circle-r,
+.psychube-circle-a{
     transform:translateX(-50%) translateY(0);
     transition:transform 0.14s linear;
 }
@@ -965,7 +967,7 @@ blockquote .attr::before{
     top:23.1%;
     left:79%;
     color:var(--accent-strong);
-    font-size:10.5rem;
+    font-size:11.2rem;
     font-family:silkSerif;
 }
 
@@ -974,7 +976,7 @@ blockquote .attr::before{
     top:35.7%;
     left:22.8%;
     color:var(--accent-strong);
-    font-size:10.5rem;
+    font-size:11.2rem;
     font-family:silkSerif;
 }
 
@@ -996,8 +998,8 @@ blockquote .attr::before{
     border-radius:50%;
     mix-blend-mode:difference;
     position:absolute;
-    top:210%;
-    left:42%;
+    top:39.2%;
+    left:25.9%;
 }
 
 .psychube-circle-r{
@@ -1008,8 +1010,8 @@ blockquote .attr::before{
     border-radius:50%;
     mix-blend-mode:difference;
     position:absolute;
-    top:14%;
-    left:21%;
+    top:23.8%;
+    left:78.4%;
 }
 
 @media only screen and (max-width:1080px){ /* pads main content when on narrower screen to prevent sidebar overlap */
