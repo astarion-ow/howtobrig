@@ -1020,3 +1020,16 @@ blockquote .attr::before{
         margin:auto;
     }
 }
+
+#wip{
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    background:var(--accent-light);
+    color:var(--bg-color);
+    width:100vw;
+    overflow:hidden;
+    text-align:center;
+    padding:0.7rem 0;
+}
