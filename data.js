@@ -83,6 +83,7 @@ const dataMap = {
 
     major_perk_2: {
         name  : "Whiplash",
-        desc  : "Whip Shot's knockback can slam enemies into walls, dealing 50 extra damage."
+        desc  : "Whip Shot's knockback can slam enemies into walls, dealing 60 extra damage.",
+        damage: 60
     }
 };

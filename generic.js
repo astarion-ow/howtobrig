@@ -13,3 +13,24 @@ function showAttribution(){
     var popup = document.getElementById("attribution");
     popup.classList.toggle("show");
 }
+
+/* convert data spans to data variable values */
+function populateDataValues(){
+    document.querySelectorAll("[data-value]").forEach(element => {
+
+        const path = element.dataset.value.split(".");
+
+        let value = dataMap;
+
+        path.forEach(key => {
+            value = value[key];
+        });
+
+        element.textContent = value;
+
+    });
+};
+
+document.addEventListener("DOMContentLoaded",() => {
+    populateDataValues();
+});
