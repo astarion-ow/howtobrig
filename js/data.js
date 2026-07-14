@@ -36,7 +36,8 @@ const dataMap = {
         recovery    : 0.18,/*seconds*/
         punishpoint : 6,/*meters*/
         recovery2   : 0.3/*seconds*/,
-        speedpunish : 50/*percent reduction*/
+        speedpunish : 50,/*percent reduction*/
+        burst       : 12
     },
 
     shield: {

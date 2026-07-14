@@ -63,7 +63,7 @@ function getTooltip(a){
             <div class="tooltip-data-tbl">
             <span class="tooltip-property">Damage: </span>${data.damage}
             <span class="tooltip-property">Knockback: </span>${data.knockback} meters per second
-            <span class="tooltip-property">Movement Speed: </span>${data.damage}% movement speed
+            <span class="tooltip-property">Movement Speed: </span>${data.speed}% movement speed
             <span class="tooltip-property">Cooldown: </span>${data.cooldown} seconds
             </div>
             `
