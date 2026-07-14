@@ -40,4 +40,9 @@
     blockquote{
         max-width:100%;
     }
+
+    /* tools */
+    .flex-change{
+        flex-direction:column;
+    }
 }

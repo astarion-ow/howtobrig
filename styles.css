@@ -509,6 +509,11 @@ hr{
     display:block;
 }
 
+.tooltip-comments{
+    font-style:italic;
+    margin:auto;
+}
+
 .ability-tooltip hr{
     margin:7px 0;
     border-style:dashed;
@@ -923,6 +928,10 @@ blockquote .attr::before{
 .inv{
     pointer-events:none;
     user-select:none;
+}
+
+.flex-change{
+    flex-direction:row;
 }
 
 /* psychube */

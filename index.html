@@ -6,20 +6,25 @@
     <title>How to Play Brigitte</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles-mobile.css" />
+    <link rel="stylesheet" href="bigfoot-number.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.webp">
-    <script  type="text/javascript" src="data.js"></script>
-    <script  type="text/javascript" src="generic.js"></script>
-    <script  type="text/javascript" src="toc.js" defer></script>
-    <script  type="text/javascript" src="toc-toggle.js" defer></script>
-    <script  type="text/javascript" src="psychube.js" defer></script>
-    <script  type="text/javascript" src="quiz.js" defer></script>
+    <script  type="text/javascript" src="js/jquery-4.0.0.min.js"></script>
+    <script  type="text/javascript" src="js/bigfoot.js"></script>
+    <script  type="text/javascript" src="js/data.js"></script>
+    <script  type="text/javascript" src="js/generic.js"></script>
+    <script  type="text/javascript" src="js/toc.js" defer></script>
+    <script  type="text/javascript" src="js/toc-toggle.js" defer></script>
+    <script  type="text/javascript" src="js/psychube.js" defer></script>
+    <script  type="text/javascript" src="js/quiz.js" defer></script>
     <script  type="module"  src="https://cdn.jsdelivr.net/npm/stacked-alpha-video/+esm"></script> <!-- web component for transparent av1 -->
+    <script  type="text/javascript">
+        $.bigfoot();
+    </script>
 
     <meta name = "twitter:card"     content="summary_large_image">
     <meta name = "twitter:title"    content="How to Play Brigitte">
-    <meta name = "twitter:description" content ="A guide on how to play Brigitte Overwatch."
+    <meta name = "twitter:description" content ="A guide on how to play Brigitte Overwatch.">
   </head>
-
   <body>
     <main><section>
     <h1>How to Play Brigitte</h1>
@@ -166,10 +171,10 @@
         <p>Finally, make sure that <strong>Video→General→Field of View</strong> is set to the max.</p>
 
         <h4 id="using-whipshot"><span class="prop">1.32</span>Using Whipshot</h4>
-        <p>Whipshot is the simplest part of Brig's kit. It's also one of the strongest tools in the game and among the most satisfying abilities to land. Much as the "boop" is often relegated to mere humor, there's a reason that only a small handful of characters have any kind of real "boop" ability. Being able to completely halt momentum and displace heroes is extremely valuable, even when you aren't knocking people off the map, and this is doubly true when you can boop people from 20 entire meters away.</p>
-        <p>As I said, the ability is simple. You click the button and the head of Brig's flail will launch forward and hit whatever you are aiming at. That's it. In addition, Whipshot has a very short cooldown of 4 seconds, meaning you can spam this ability pretty freely.</p>
+        <p>Whipshot is the simplest part of Brig's kit. It's also one of the strongest tools in the game and among the most satisfying abilities to land. Much as the "boop" is often relegated to mere humor, there's a reason that only a small handful of characters have any kind of real "boop" ability. Being able to completely halt momentum and displace heroes is extremely valuable, even when you aren't knocking people off the map, and this is doubly true when you can boop people from <span data-value="whipshot.range"></span> entire meters away.</p>
+        <p>As I said, the ability is simple. You click the button and the head of Brig's flail will launch forward and hit whatever you are aiming at. That's it. In addition, Whipshot has a very short cooldown of <span data-value="whipshot.cooldown"></span> seconds, meaning you can spam this ability pretty freely.</p>
         <p>The only nuance to understand about Whipshot is that it is a projectile weapon, not a hitscan one. In the words of Soldier: 76, "aim where they're going, not where they are." Also, don't be afraid to just hit the biggest guy you see ad infinitum. Whipping the Tank is far easier than whipping a DPS or Support, and knocking the Tank away is one of Brig's primary purposes.</p>
-        <p>There is one significant drawback to Whipshot which you don't anticipate screwing you over until it actually does so. Missing your Whipshot can and will punish you. The farther away your target is, the riskier it is to try and Whipshot them. This is especially true for trying to Whipshot flying characters. Unlike the rest of Brig's abilities, your Whipshot cannot be animation-cancelled via another input. When you click Whipshot, you are locked into an animation until the head of the flail comes back to you, which only happens once the Whipshot has either hit an enemy or an environmental surface. If it hits neither (like in the case of missing a Whipshot on a flyer), then you will be motionless for almost an entire half-second waiting for the Whipshot to reach max range and retract, which can be a <em>very</em> long time in the heat of battle. In addition, you are slowed to 50% movement speed while your Whipshot is active, so that's a half-second where you are slow <em>and</em> unable to fight back. Be smart about going for risky Whipshots; if you are eating damage from one angle then it is probably not a good idea to chance a Whipshot on a 20HP Echo in a separate direction unless you are very confident that you can land the hit.</p>
+        <p>There is one significant drawback to Whipshot which you don't anticipate screwing you over until it actually does so. Missing your Whipshot can and will punish you. The farther away your target is, the riskier it is to try and Whipshot them.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> This is especially true for trying to Whipshot flying characters. Unlike the rest of Brig's abilities, your Whipshot cannot be animation-cancelled via another input. When you click Whipshot, you are locked into an animation until the head of the flail comes back to you, which only happens once the Whipshot has either hit an enemy or an environmental surface. If it hits neither (like in the case of missing a Whipshot on a flyer), then you will be motionless for almost an entire half-second waiting for the Whipshot to reach max range and retract, which can be a <em>very</em> long time in the heat of battle. In addition, you are slowed to <span data-value="whipshot.punishspeed"></span>% movement speed while your Whipshot is active, so that's a half-second where you are slow <em>and</em> unable to fight back. Be smart about going for risky Whipshots; if you are eating damage from one angle then it is probably not a good idea to chance a Whipshot on a 20HP Echo in a separate direction unless you are very confident that you can land the hit.</p>
         
         <h5><span class="prop">1.321</span>Pre-Aiming Escape Routes</h5>
 
@@ -256,7 +261,6 @@
                     <div style="display:flex;flex-direction:column;padding-top:14px;">
                         <span>D.Va's Re-Mech</span>
                         <span>Junker Queen's Rampage</span>
-                        <span>Reinhardt's Shatter</span>
                         <span>Cassidy's Deadeye</span>
                         <span>Reaper's Death Blossom</span>
                         <span>Moira's Coalescence</span>
@@ -268,6 +272,7 @@
                         <span>Domina's Panopticon</span>
                         <span>Hazard's Downpour</span>
                         <span>Mauga's Cage Fight</span>
+                        <span>Reinhardt's Shatter</span>
                         <span>Sigma's Gravitic Flux</span>
                         <span>Freja's Bola Shot</span>
                         <span>Mei's Blizzard</span>
@@ -278,14 +283,14 @@
                     <div style="display:flex;flex-direction:column;padding-top:14px;">
                         <span>Anran's Vermillion Ascent</span>
                         <span>Hanzo's Dragonstrike</span>
-                        <span>Illari's Captive Sun</span>
-                        <span>Jetpack Cat's Catnapper</span>
                         <span>Junkrat's RIP-Tire</span>
-                        <span>Juno's Orbital Ray</span>
                         <span>Pharah's Barrage</span>
                         <span>Sombra's EMP</span>
-                        <span>Lúcio's Sound Barrier</span>
                         <span>Vendetta's Sundering Blade</span>
+                        <span>Illari's Captive Sun</span>
+                        <span>Jetpack Cat's Catnapper</span>
+                        <span>Juno's Orbital Ray</span>
+                        <span>Lúcio's Sound Barrier</span>      
                         <span>Wuyang's Tidal Blast</span>
                     </div>
                 </div>
@@ -307,7 +312,7 @@
 
         <h4 id="a-brief-note-on-perks"><span class="prop">1.37</span>A Brief Note on Perks</h4>
         <p>At the time of writing, Brig's Perks are all quite good. You can't really go wrong picking any of them, though there are definitely arguments to be made for the case of an "optimal build." Common wisdom dictates that you should choose your Minor Perk based on the environment of the game you're in; if you are against a more brawl-heavy team and aren't able to get too close to the action then her Right Minor Perk (Morale Boost) can compensate for your limited engagements by extending your Inspire uptime. Conversely, if you are playing against a dive-heavy team and are spending a lot of time fending off flankers then her Left Minor Perk (Combat Medic) lets you chuck Repair Packs with ridiculous frequency. I will caveat this to say that I personally always take Morale Boost; I prefer to maintain my existing muscle memory regarding when I have Packs available, and I find that Morale Boost provides more consistent value over the length of a game.</p>
-        <p>Her Major Perk is less of a discussion because the majority of Brig players will tell you that her Left Major Perk (Inspiring Strike) is by far the better option. It adds even more utility to Shield Bash, giving you additional movement speed equivalent to Junker Queen's Shout while also making you better in brawls and 1v1 duels by changing the Inspire triggered from Bashing from healing-over-time into burst healing. This means that hitting an enemy with Shield Bash now <i>instantly</i> heals you and any allies in range for 60HP a piece, which is on par with Baptiste's Regenerative Burst. Not only that, this burst healing <i>stacks</i> with your existing Inspire rather than resetting it. If you are in the middle of a brawl, weaving in Bashes and flail swings, then you will constantly be healing for 15HP a second with a 60HP burst heal on a 5 second cooldown. Your healing numbers will skyrocket and flankers will have an extremely hard time killing you or any teammates near you.</p>
+        <p>Her Major Perk is less of a discussion because the majority of Brig players will tell you that her Left Major Perk (Inspiring Strike) is by far the better option. It adds even more utility to Shield Bash, giving you additional movement speed equivalent to Junker Queen's Shout while also making you better in brawls and 1v1 duels by changing the Inspire triggered from Bashing from healing-over-time into burst healing. This means that hitting an enemy with Shield Bash now <i>instantly</i> heals you and any allies in range for <span data-value="inspire.maxhealing"></span>HP a piece, which is on par with Baptiste's Regenerative Burst. Not only that, this burst healing <i>stacks</i> with your existing Inspire rather than resetting it. If you are in the middle of a brawl, weaving in Bashes and flail swings, then you will constantly be healing for 15HP a second with a <span data-value="inspire.maxhealing"></span>HP burst heal on a <span data-value="bash.cooldown"></span> second cooldown. Your healing numbers will skyrocket and flankers will have an extremely hard time killing you or any teammates near you.</p>
         <p>However, you will have to pry Whiplash from my cold dead hands.</p>
         <p>Whiplash, Brig's Right Major Perk, is so unbelievably fun to use. It's a simple effect: if your Whipshot knocks an enemy into a wall then they will take an additional <span data-value="major_perk_2.damage"></span> damage. Before we get into my competitive argument for using it, I could recommend running Whiplash over Inspiring Strike for the dopamine hits alone. Whipping enemies into walls never gets old, and most clipworthy POTGs I've gotten involve this Perk in some capacity. This is not to mention how much Whiplash affects your matchup against Tracer. I go over this in more detail in the Counterplay section later on, but Brig's greatest strength against Tracer is the fact that Whipshot's damage chunks 40% of Tracer's health bar and thus forces her Recall. With Whiplash, a successful Whipshot takes <i>70%</i> of Tracer's HP, which absolutely cripples her ability to engage if it doesn't outright kill her. To get down to brass tacks, this leads me into the actual reason to run this Perk beyond the fun of doing so.</p>
         <p><i>Whiplash changes breakpoints.</i></p>
@@ -438,7 +443,7 @@
             <p>How to Counter Every Hero in the Game</p>
         </div>
         <div class="arrow-break"><span class="arrow-head"></span><span class="arrow-head"></span><span class="arrow-head"></span></div>
-        <p>Here we will address Brig's individual match-ups against every hero in <cite>Overwatch</cite>. Brig's versatility makes her a viable pick against any enemy team composition, however some match-ups will dramatically change how you'll have to pilot the hero in order to find value. In the broadest sense, Brig is strongest against Dive heroes who look to burst down your team in sudden engagements (e.g. Winston, Tracer, Wrecking Ball, Sombra) and struggles against Poke heroes who look to deal long-range damage from varying angles (e.g. Sigma, Ashe, Junkrat, Illari) and Brawl heroes who look to run over your team with speed and raw damage (e.g. Reinhardt, Ramattra, Reaper, Lúcio). However, even against these more unfavorable match-ups, Brig can find easy and consistent value by identifying both the enemy's win condition and the correct timing to punish enemy mistakes).</p>
+        <p>Here we will address Brig's individual match-ups against every hero in <cite>Overwatch</cite>. Brig's versatility makes her a viable pick against any enemy team composition, however some match-ups will dramatically change how you'll have to pilot the hero in order to find value. In the broadest sense, Brig is strongest against Dive heroes who look to burst down your team in sudden engagements (e.g. Winston, Tracer, Wrecking Ball, Sombra) and struggles against Poke heroes who look to deal long-range damage from varying angles (e.g. Sigma, Ashe, Junkrat, Illari) and Brawl heroes who look to run over your team with speed and raw damage (e.g. Reinhardt, Ramattra, Reaper, Lúcio). However, even against these more unfavorable match-ups, Brig can find easy and consistent value by identifying both the enemy's win condition and the correct timing to punish enemy mistakes.</p>
         </section></main>
         <nav style="margin-top:14px;">
         <div class="tbl abbr nav">
@@ -562,6 +567,7 @@
         <!-- Sigma -->
         <h4 id="sigma">Sigma</h4>
         <p>Sigma is my second-favorite Tank to play against as Brig. As long as you block his Rock, which is incredibly easy to do thanks to its long windup, Sigma is the only Tank that Brig can reliably win a 1v1 against. His shield is useless against your mace and Sigmas have a tendency to panic and use their similarly useless Kinetic Grasp when you swing on them, which essentially loses them the fight against Brig on its own. Simply block his primary fire and keep swinging and he will either die or be forced to retreat. Now this does not mean that you should immediately bash into a Sigma as soon as you see one, because this only applies to a 1v1. If either of his Supports so much as glance at him then you will instead lose, so only take this fight if his Supports are preoccupied, dead, or too far away to heal him. This is a particularly valuable matchup when the enemy Sigma is forced to contest point, especially on KotH maps.</p>
+        <p>As long as you have Bash, it's actually pretty easy to evade Sigma's Gravitic Flux</p>
         <!-- Winston -->
         <h4 id="winston">Winston</h4>
         <p>Nothing makes me smile more than seeing the monkey on the enemy team. Much like Wrecking Ball, Winston is a Tank that Brig directly counters, however the matchup against Winston is much more cerebral than the Ball matchup. Wrecking Ball's extremely high mobility and get-out-of-jail shields let him get away with a lot of mistakes and hyper-aggressive plays, while Winston is a Tank that rewards careful planning, positioning, and execution based largely around two simple abilities. A good Winston can dumpster a team on his own, not to mention how effective he is when coordinating dives with DPS heroes. However, all Winstons hate this one simple trick: Use Whipshot. If Winston can't engage with his Jump then he is basically useless for the next 4 seconds, and as long as you keep hitting Whipshots on him then you can keep him MiA for damn near the entire game.</p>
@@ -720,6 +726,15 @@
             <li><p><strong>Play like 10-20 hours of <cite>Dead by Daylight</cite>.</strong> I am being so completely serious. DBD is a terrible game overall with an extremely steep learning curve so I wouldn't dedicate <em>too</em> much time to this but <cite>Dead by Daylight</cite> is in a wholly unique position of being a popular PvP game with a gameplay loop centering almost entirely around movement-based mind games. The skills you develop from these mind games translate surprisingly well in helping you with your positioning as Brig during disadvantageous fights. This largely applies to the Survivor role in DBD rather than the Killer role but there is value in practicing both. The YouTuber <a href="https://youtube.com/@NotOtzdarva">Otzdarva</a> is a good starting point for learning the absolute basics of the game because the in-game tutorials are famously bad and will not be of much help to you.</p></li>
         </ul>
     </section></main>
+    <aside>
+        <div class="footnotes">
+            <ol>
+                <li class="footnote" id="fn:1">
+                    <p>This specific breakpoint is at <span data-value="whipshot.punishpoint"></span> meters; if your Whipshot extends past this point then the time it takes for the head of the flail to retract is increased from <span data-value="whipshot.recovery"></span> to <span data-value="whipshot.recovery2"></span>.<a href="#fnref:1" title="return to article"> ↩</a></p>
+                </li>
+            </ol>
+        </div>
+    </aside>
   <aside id="sidebar" class="sidebar-collapsed">
     <div id="sidebar-content">
         <span style="display:block;text-align:center">[Table of Contents]</span>

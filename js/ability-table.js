@@ -15,6 +15,7 @@ function getTooltip(a){
             <span class="tooltip-property">Damage: </span>${data.damage}
             <span class="tooltip-property">Range: </span>${data.range}
             </div>
+            <span class="tooltip-comments">This functions as both your primary fire and your melee attack.</span>
             `
     } else if (a == "pack") {
         return `
